@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">闹钟</string>
+    <string name="str_alarm_tip">闹钟</string>
+    <string name="str_add_alarm_tip">添加闹钟</string>
+    <string name="str_no_alarm_tip">还没有设置闹钟</string>
+    <string name="alarm_week_mon">一</string>
+    <string name="alarm_week_tues">二</string>
+    <string name="alarm_week_wed">三</string>
+    <string name="alarm_week_thur">四</string>
+    <string name="alarm_week_fri">五</string>
+    <string name="alarm_week_sat">六</string>
+    <string name="alarm_week_sun">日</string>
+    <string name="str_week_tip">每周:</string>
+    <string name="str_week_onetime">单次</string>
+    <string name="str_everyday">每天</string>
+    <string name="str_week1">星期一</string>
+    <string name="str_week2">星期二</string>
+    <string name="str_week3">星期三</string>
+    <string name="str_week4">星期四</string>
+    <string name="str_week5">星期五</string>
+    <string name="str_week6">星期六</string>
+    <string name="str_week7">星期日</string>
+    <string name="str_no_week_tip">请至少选择一个周期选项</string>
+    <string name="do_not_setting_clock_tip">重复闹钟.</string>
+</resources>

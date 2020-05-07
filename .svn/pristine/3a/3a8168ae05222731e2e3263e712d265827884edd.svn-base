@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:wearlauncher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/transport"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <com.sczn.wearlauncher.status.view.QrcodeIcon 
+	        android:id="@+id/status_qrcode"
+	        style="@style/style_status_icon_contain"
+	        wearlauncher:iconsize="@dimen/status_icon_size"
+	        wearlauncher:textsize="@dimen/text_size_status"
+	        wearlauncher:stringId="@string/status_qrcode"
+	        wearlauncher:imageId="@drawable/statu_icon_qrcode"/>
+	    <com.sczn.wearlauncher.status.view.UserInfoIcon
+	        android:id="@+id/status_userInfo"
+	        style="@style/style_status_icon_contain"
+	        wearlauncher:stringId="@string/userinfo_title"
+	        wearlauncher:imageId="@drawable/status_icon_userinfo"/>
+    </LinearLayout>  
+        
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/status_icon_horizontal_gap"/>
+        
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	    
+        <com.sczn.wearlauncher.status.view.SosIcon
+	        android:id="@+id/status_sos"
+	        style="@style/style_status_icon_contain"
+	        wearlauncher:stringId="@string/status_sos"
+	        wearlauncher:imageId="@drawable/statu_icon_sos"/>
+        
+        <com.sczn.wearlauncher.status.view.RecentIcon
+	        android:id="@+id/status_recent"
+	        style="@style/style_status_icon_contain"
+	        wearlauncher:stringId="@string/status_recent"
+	        wearlauncher:imageId="@drawable/statu_icon_recent"/>
+            
+    </LinearLayout> 
+
+</LinearLayout> 

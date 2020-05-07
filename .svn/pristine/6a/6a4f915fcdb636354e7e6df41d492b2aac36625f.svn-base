@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_180"
+            android:layout_marginTop="@dimen/size_3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_6"
+            android:paddingRight="@dimen/size_6">
+
+            <ImageView
+                android:id="@+id/device_id_qrcode_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_168"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="@dimen/size_6" />
+
+            <TextView
+                android:id="@+id/next_view"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_168"
+                android:layout_marginLeft="@dimen/size_6"
+                android:background="@drawable/long_selector_solid_90ee90"
+                android:gravity="center"
+                android:maxEms="3"
+                android:padding="@dimen/size_8"
+                android:text="@string/guide_tip_5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:text="@string/guide_tip_8"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+        <!--优化布局 调整字体的大小-->
+        <TextView
+            android:id="@+id/device_id_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_6"
+            android:layout_marginRight="@dimen/size_3"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_14"
+            tools:text="0d1c436365c74ec2b8921e493b6a5e43" />
+
+    </LinearLayout>
+
+</RelativeLayout>

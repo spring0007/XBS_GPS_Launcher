@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	
+    <TextView
+        style="@style/userinfo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/userinfo_title"
+        android:text="@string/userinfo_title" />
+    
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbarSize="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/userinfo_list_height"
+		        android:paddingStart="@dimen/userinfo_list_padding_left"
+		        android:paddingEnd="@dimen/userinfo_list_padding_left">
+		        
+		        <TextView android:id="@+id/name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentStart="true"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical"
+		            android:text="@string/userinfo_name"
+		            android:drawableStart="@drawable/userinfo_name"
+		            android:drawablePadding="@dimen/userinfo_test_drawable_padding"
+		            android:textSize="@dimen/userinfo_text_lable"/>
+		        
+		        <TextView android:id="@+id/userinfo_name"
+		            android:layout_toEndOf="@id/name"
+		            android:layout_alignParentEnd="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical|end"
+		            android:drawablePadding="@dimen/userinfo_test_drawable_padding"
+		            android:drawableEnd="@drawable/userinfo_edit"
+		            android:textSize="@dimen/userinfo_text_info"
+		            android:textColor="@color/userinfo_text_info"/>
+		        
+		        <View 
+		            android:layout_alignParentBottom="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:background="@color/userinfo_text_info"/>
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/userinfo_list_height"
+		        android:paddingStart="@dimen/userinfo_list_padding_left"
+		        android:paddingEnd="@dimen/userinfo_list_padding_left">
+		        
+		        <TextView android:id="@+id/sex"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentStart="true"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical"
+		            android:text="@string/userinfo_sex"
+		            android:drawableStart="@drawable/userinfo_sex"
+		            android:drawablePadding="@dimen/userinfo_test_drawable_padding"
+		            android:textSize="@dimen/userinfo_text_lable"/>
+		        
+		        <TextView android:id="@+id/userinfo_sex"
+		            android:layout_toEndOf="@id/sex"
+		            android:layout_alignParentEnd="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical|end"
+		            android:drawablePadding="@dimen/userinfo_test_drawable_padding"
+		            android:drawableEnd="@drawable/userinfo_edit"
+		            android:textSize="@dimen/userinfo_text_info"
+		            android:textColor="@color/userinfo_text_info"/>
+		        
+		        <View 
+		            android:layout_alignParentBottom="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:background="@color/userinfo_text_info"/>
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/userinfo_list_height"
+		        android:paddingStart="@dimen/userinfo_list_padding_left"
+		        android:paddingEnd="@dimen/userinfo_list_padding_left">
+		        
+		        <TextView android:id="@+id/height"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentStart="true"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical"
+		            android:text="@string/userinfo_height"
+		            android:drawableStart="@drawable/userinfo_height"
+		            android:drawablePadding="@dimen/userinfo_test_drawable_padding"
+		            android:textSize="@dimen/userinfo_text_lable"/>
+		        
+		        <TextView android:id="@+id/userinfo_height"
+		            android:layout_toEndOf="@id/height"
+		            android:layout_alignParentEnd="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical|end"
+		            android:drawablePadding="@dimen/userinfo_test_drawable_padding"
+		            android:drawableEnd="@drawable/userinfo_edit"
+		            android:textSize="@dimen/userinfo_text_info"
+		            android:textColor="@color/userinfo_text_info"/>
+		        
+		        <View 
+		            android:layout_alignParentBottom="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:background="@color/userinfo_text_info"/>
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/userinfo_list_height"
+		        android:paddingStart="@dimen/userinfo_list_padding_left"
+		        android:paddingEnd="@dimen/userinfo_list_padding_left">
+		        
+		        <TextView android:id="@+id/weight"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentStart="true"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical"
+		            android:text="@string/userinfo_weight"
+		            android:drawableStart="@drawable/userinfo_weight"
+		            android:drawablePadding="@dimen/userinfo_test_drawable_padding"
+		            android:textSize="@dimen/userinfo_text_lable"/>
+		        
+		        <TextView android:id="@+id/userinfo_weight"
+		            android:layout_toEndOf="@id/weight"
+		            android:layout_alignParentEnd="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical|end"
+		            android:drawablePadding="@dimen/userinfo_test_drawable_padding"
+		            android:drawableEnd="@drawable/userinfo_edit"
+		            android:textSize="@dimen/userinfo_text_info"
+		            android:textColor="@color/userinfo_text_info"/>
+		        
+		        <View 
+		            android:layout_alignParentBottom="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:background="@color/userinfo_text_info"/>
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/userinfo_list_height"
+		        android:paddingStart="@dimen/userinfo_list_padding_left"
+		        android:paddingEnd="@dimen/userinfo_list_padding_left">
+		        
+		        <TextView android:id="@+id/target"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentStart="true"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical"
+		            android:text="@string/userinfo_targett"
+		            android:drawableStart="@drawable/userinfo_target"
+		            android:drawablePadding="@dimen/userinfo_test_drawable_padding"
+		            android:textSize="@dimen/userinfo_text_lable"/>
+		        
+		        <TextView android:id="@+id/userinfo_target"
+		            android:layout_toEndOf="@id/target"
+		            android:layout_alignParentEnd="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_centerVertical="true"
+		            android:gravity="center_vertical|end"
+		            android:drawablePadding="@dimen/userinfo_test_drawable_padding"
+		            android:drawableEnd="@drawable/userinfo_edit"
+		            android:textSize="@dimen/userinfo_text_info"
+		            android:textColor="@color/userinfo_text_info"/>
+		        
+		        <View 
+		            android:layout_alignParentBottom="true"
+		            android:layout_width="match_parent"
+		            android:layout_height="1dp"
+		            android:background="@color/userinfo_text_info"/>
+		    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

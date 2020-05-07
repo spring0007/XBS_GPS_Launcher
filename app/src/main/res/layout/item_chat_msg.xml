@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <!-- 左边布局  -->
+    <RelativeLayout
+        android:id="@+id/msg_obtain_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size_8"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/time_head_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_16"
+            android:layout_marginStart="@dimen/size_4"
+            android:gravity="center"
+            android:text="2019-12-22 6:3:2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_12" />
+
+        <com.sczn.wearlauncher.contact.view.CircleImageView
+            android:id="@+id/image_head_left"
+            android:layout_width="@dimen/size_60"
+            android:layout_height="@dimen/size_60"
+            android:layout_below="@+id/time_head_left"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size_2"
+            android:src="@drawable/contact_default" />
+
+        <RelativeLayout
+            android:id="@+id/msg_left_relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_head_left"
+            android:layout_margin="@dimen/size_2"
+            android:layout_toEndOf="@+id/image_head_left"
+            android:background="@drawable/chat_msg_left_bg"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/msg_obtain_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:textColor="#101010"
+                android:textSize="@dimen/text_size_20"
+                tools:text="xzxxxxxx" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/img_left_relativelayout"
+            android:layout_width="@dimen/size_60"
+            android:layout_height="@dimen/size_60"
+            android:layout_below="@+id/time_head_left"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/image_head_left"
+            android:background="@drawable/chat_msg_left_bg"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/msg_obtain_img"
+                android:layout_width="@dimen/size_60"
+                android:layout_height="@dimen/size_60"
+                android:padding="@dimen/size_6"
+                android:src="@drawable/temp_face" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/voice_left_relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_60"
+            android:layout_below="@+id/time_head_left"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/image_head_left"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/chat_msg_left_bg">
+
+                <ImageView
+                    android:id="@+id/voice_obtain_image"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/temp_voice_left3"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/voice_obtain_duration_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size_10"
+                android:layout_toEndOf="@+id/view"
+                android:textColor="#101010"
+                android:textSize="@dimen/text_size_18"
+                tools:text="7'" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- 右边布局 -->
+    <RelativeLayout
+        android:id="@+id/msg_send_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size_8"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/time_head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_16"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/size_4"
+            android:gravity="center"
+            android:text="2019-12-22 6:3:2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_12" />
+
+        <com.sczn.wearlauncher.contact.view.CircleImageView
+            android:id="@+id/image_head_right"
+            android:layout_width="@dimen/size_60"
+            android:layout_height="@dimen/size_60"
+            android:layout_below="@+id/time_head_right"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size_2"
+            android:src="@drawable/contact_default" />
+
+        <RelativeLayout
+            android:id="@+id/text_right_relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_head_right"
+            android:layout_toStartOf="@+id/image_head_right"
+            android:background="@drawable/chat_msg_right_bg"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/msg_send_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:textColor="#101010"
+                android:textSize="@dimen/text_size_20"
+                tools:text="xxxxxxxx" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/img_right_relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_head_right"
+            android:layout_toStartOf="@+id/image_head_right"
+            android:background="@drawable/chat_msg_right_bg"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/msg_send_img"
+                android:layout_width="@dimen/size_60"
+                android:layout_height="@dimen/size_60"
+                android:padding="@dimen/size_6"
+                android:src="@drawable/temp_face" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/voice_right_relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_60"
+            android:layout_below="@+id/time_head_right"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/image_head_right"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/voice_send_image"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/temp_voice_right3"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/voice_send_duration_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/view1"
+                android:textColor="#101010"
+                android:textSize="@dimen/text_size_18"
+                tools:text="7'" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

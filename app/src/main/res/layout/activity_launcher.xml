@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <com.sczn.wearlauncher.base.view.VerticalViewPager
+        android:id="@+id/vertical_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ViewAnimator
+        android:id="@+id/va_launcher_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:name="com.sczn.wearlauncher.status.PhoneStatusBarFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ViewAnimator>
+
+    <!--新消息-->
+    <ImageView
+        android:id="@+id/iv_notify"
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/size_4"
+        android:background="@drawable/lc_icon_chat_tip_anim"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+
+

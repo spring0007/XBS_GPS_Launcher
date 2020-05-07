@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menulist xmlns:wearlauncher="http://schemas.android.com/apk/res/com.waterworld.doctor.gprscmd">
+
+    <!-- menu app列表 闹钟 -->
+    <!--<menu-->
+    <!--wearlauncher:CustomIconName="clocks.png"-->
+    <!--wearlauncher:CustomName="@string/clock_text"-->
+    <!--wearlauncher:Type="1">-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.android.deskclock.SlidingAlarmClock"-->
+    <!--wearlauncher:CustomIconName="com.android.deskclock.AlarmClockActivity.png" />-->
+
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.android.deskclock.DeskClock"-->
+    <!--wearlauncher:CustomIconName="com.android.deskclock.timer.TimerActivity.png" />-->
+
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.mediatek.keyguard.Clock.Unlockclocksetting"-->
+    <!--wearlauncher:CustomIconName="com.mediatek.keyguard.Clock.Unlockclocksetting.png" />-->
+    <!--</menu>-->
+
+    <!-- 系统闹钟 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.android.deskclock.DeskClock"-->
+    <!--wearlauncher:CustomIconName="clocks.png"-->
+    <!--wearlauncher:CustomName="@string/clock_text" />-->
+
+    <!-- 闹钟 -->
+    <menu
+        wearlauncher:ClassName="AlarmClockActivityModel"
+        wearlauncher:CustomIconName="com.android.deskclock.AlarmClockActivity.png"
+        wearlauncher:CustomName="@string/volume_alarm"
+        wearlauncher:Type="1" />
+
+    <!-- 相机 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.android.camera.CameraLauncher"-->
+    <!--wearlauncher:CustomIconName="com.android.camera.CameraLauncher.png" />-->
+
+    <!-- 通话 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.android.dialer.DialtactsActivity"-->
+    <!--wearlauncher:CustomIconName="com.android.dialer.DialtactsActivity.png"-->
+    <!--wearlauncher:CustomName="@string/call"-->
+    <!--wearlauncher:Type="1" />-->
+
+    <!-- 联系人 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.android.contacts.activities.PeopleActivity"-->
+    <!--wearlauncher:CustomIconName="com.android.contacts.activities.PeopleActivity.png"-->
+    <!--wearlauncher:CustomName="@string/contact"-->
+    <!--wearlauncher:Type="1" />-->
+
+    <!-- 课程表 -->
+    <menu
+        wearlauncher:ClassName="TaskInfoActivity"
+        wearlauncher:CustomIconName="task.png"
+        wearlauncher:CustomName="@string/schedule"
+        wearlauncher:Type="1" />
+
+    <!-- 联系人 -->
+    <menu
+        wearlauncher:ClassName="ContactActivity"
+        wearlauncher:CustomIconName="com.android.contacts.activities.PeopleActivity.png"
+        wearlauncher:CustomName="@string/contact"
+        wearlauncher:Type="1" />
+
+    <!-- 微聊 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.szwearable.chat.MainActivity"-->
+    <!--wearlauncher:CustomIconName="com.android.mms.ui.BootActivity.png"-->
+    <!--wearlauncher:CustomName="@string/chat"-->
+    <!--wearlauncher:Type="1" />-->
+
+    <!-- 微聊 -->
+    <menu
+        wearlauncher:ClassName="ChatGroupListActivity"
+        wearlauncher:CustomIconName="com.android.mms.ui.BootActivity.png"
+        wearlauncher:CustomName="@string/chat"
+        wearlauncher:Type="1" />
+
+    <!-- 交朋友 -->
+    <menu
+        wearlauncher:ClassName="ShakeActivity"
+        wearlauncher:CustomIconName="friend.png"
+        wearlauncher:CustomName="@string/shake_friend"
+        wearlauncher:Type="1" />
+
+    <!--新的记步模块-->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="StepActivity"-->
+    <!--wearlauncher:CustomIconName="card_steps.png"-->
+    <!--wearlauncher:CustomName="@string/card_steps"-->
+    <!--wearlauncher:Type="1" />-->
+
+    <!--步数-->
+    <menu
+        wearlauncher:ClassName="fragment_Step"
+        wearlauncher:CustomIconName="card_steps.png"
+        wearlauncher:CustomName="@string/card_steps"
+        wearlauncher:Type="6" />
+
+    <!-- 没有睡眠数据这一块 -->
+    <!-- 睡眠 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="fragment_Sleep"-->
+    <!--wearlauncher:CustomIconName="health.png"-->
+    <!--wearlauncher:CustomName="@string/card_sleep"-->
+    <!--wearlauncher:Type="6" />-->
+
+    <!-- 二维码 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="QrcodeActivity"-->
+    <!--wearlauncher:CustomIconName="watchmanager.png"-->
+    <!--wearlauncher:CustomName="@string/qr_code"-->
+    <!--wearlauncher:Type="1" />-->
+
+    <!-- 系统的设置页面 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.android.settings.Settings"-->
+    <!--wearlauncher:CustomIconName="com.android.settings.Settings.png" />-->
+
+    <!-- 计算器 -->
+    <menu
+        wearlauncher:ClassName="CalculatorActivity"
+        wearlauncher:CustomIconName="calculator.png"
+        wearlauncher:CustomName="@string/calculator"
+        wearlauncher:Type="1" />
+
+    <!-- 自定义的设置 -->
+    <menu
+        wearlauncher:ClassName="SettingActivity"
+        wearlauncher:CustomIconName="com.android.settings.Settings.png"
+        wearlauncher:CustomName="@string/setting"
+        wearlauncher:Type="1" />
+
+    <!-- 其他应用 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.kct.flyrtc.ui.MainActivity"-->
+    <!--wearlauncher:CustomIconName="com.android.camera.CameraLauncher.png"-->
+    <!--wearlauncher:CustomName="@string/video"-->
+    <!--wearlauncher:Type="1" />-->
+
+    <!-- 更换主题 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="StyleChooseActivity"-->
+    <!--wearlauncher:CustomIconName="style.png"-->
+    <!--wearlauncher:CustomName="@string/style_text"-->
+    <!--wearlauncher:Type="1" />-->
+
+
+    <!-- 以前有的一些扩展功能 -->
+    <!--<menu-->
+    <!--wearlauncher:CustomIconName="remotecontrol.png"-->
+    <!--wearlauncher:CustomName="@string/assist_android"-->
+    <!--wearlauncher:Type="2">-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.RemoteMusicActivity"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.RemoteMusicActivity.png" />-->
+    <!--<children-->
+    <!--wearlauncher:Action="com.sczn.btconnect.activity.FunctionActivity.FindPhone"-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.FindPhoneActivity"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.WatchFindPhoneActivity.png" />-->
+    <!--<children-->
+    <!--wearlauncher:Action="com.sczn.btconnect.activity.FunctionActivity.LockPhone"-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.LockPhoneActivity"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.WatchLockPhoneActivity.png" />-->
+    <!--<children-->
+    <!--wearlauncher:Action="com.sczn.btconnect.activity.FunctionActivity.RemoteCamera"-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.RemoteCameraActivity"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.WatchRemoteCameraActivity.png" />-->
+    <!--<children-->
+    <!--wearlauncher:Action="com.sczn.btconnect.activity.FunctionActivity.RemoteConnect"-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.WatchBluetoothControl"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.WatchBluetoothControl.png" />-->
+    <!--<children-->
+    <!--wearlauncher:Action="com.sczn.btconnect.activity.FunctionActivity.Qrcode"-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.QRcodeAcitivity"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.QRcodeAcitivity.png" />-->
+    <!--</menu>-->
+
+    <!-- 
+    <children
+            wearlauncher:ClassName="com.android.deskclock.stopwatch.StopwatchActivity"
+        	wearlauncher:CustomIconName="com.android.deskclock.stopwatch.StopwatchActivity.png"/>
+     -->
+
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.lidinghengvideo.dinghengapp.FuWuMainActivity"-->
+    <!--wearlauncher:CustomIconName="live_logo.png" />-->
+
+    <!-- 浏览器 -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.android.browser.BrowserActivity"-->
+    <!--wearlauncher:CustomIconName="com.android.browser.BrowserActivity.png" />-->
+
+    <!-- 工具 -->
+    <!--<menu-->
+    <!--wearlauncher:CustomIconName="tools.png"-->
+    <!--wearlauncher:CustomName="@string/tools_text"-->
+    <!--wearlauncher:Type="1">-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.android.calculator2.Calculator"-->
+    <!--wearlauncher:CustomIconName="calculator.png" />-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.android.calendar.AllInOneActivity"-->
+    <!--wearlauncher:CustomIconName="com.easier.ui.CalendarView.png" />-->
+    <!--</menu>-->
+
+    <!--<menu-->
+    <!--wearlauncher:CustomIconName="watchmanager.png"-->
+    <!--wearlauncher:CustomName="@string/watch_manage_text"-->
+    <!--wearlauncher:Type="1">-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.android.providers.downloads.ui.DownloadList"-->
+    <!--wearlauncher:CustomIconName="com.android.providers.downloads.ui.DownloadList.png" />-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.mediatek.filemanager.FileManagerOperationActivity"-->
+    <!--wearlauncher:CustomIconName="com.mediatek.filemanager.FileManagerOperationActivity.png" />-->
+    <!--</menu>-->
+
+    <!--<menu-->
+    <!--wearlauncher:CustomIconName="videocenter.png"-->
+    <!--wearlauncher:CustomName="@string/video_text"-->
+    <!--wearlauncher:Type="1">-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.android.soundrecorder.SoundRecorder"-->
+    <!--wearlauncher:CustomIconName="com.android.soundrecorder.SoundRecorder.png" />-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.android.music.MusicBrowserActivity"-->
+    <!--wearlauncher:CustomIconName="com.android.music.MusicBrowserActivity.png" />-->
+    <!--</menu>-->
+
+    <!--<menu-->
+    <!--wearlauncher:CustomIconName="multimedia.png"-->
+    <!--wearlauncher:CustomName="@string/multimedia_center_text"-->
+    <!--wearlauncher:Type="1">-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.android.gallery3d.app.GalleryActivity"-->
+    <!--wearlauncher:CustomIconName="com.android.gallery3d.app.GalleryActivity.png" />-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.mediatek.videoplayer.MovieListActivity"-->
+    <!--wearlauncher:CustomIconName="com.mediatek.videoplayer.MovieListActivity.png" />-->
+    <!--</menu>-->
+
+    <!-- google map -->
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.google.android.maps.MapsActivity"-->
+    <!--wearlauncher:CustomIconName="com.google.android.maps.MapsActivity.png" />-->
+
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.google.android.googlequicksearchbox.VoiceSearchActivity"-->
+    <!--wearlauncher:CustomIconName="com.google.android.googlequicksearchbox.VoiceSearchActivity.png" />-->
+
+    <!--<menu-->
+    <!--wearlauncher:ClassName="com.android.vending.AssetBrowserActivity"-->
+    <!--wearlauncher:CustomIconName="com.android.vending.AssetBrowserActivity.png" />-->
+
+
+    <!-- 音乐 -->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.RemoteMusicActivity"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.RemoteMusicActivity.png" />-->
+
+
+    <!-- 不知道未知 -->
+    <!--<menu-->
+    <!--wearlauncher:CustomIconName="assist_android.png"-->
+    <!--wearlauncher:CustomName="@string/assist_android"-->
+    <!--wearlauncher:Type="4">-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.FindPhoneActivity"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.WatchFindPhoneActivity.png" />-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.LockPhoneActivity"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.WatchLockPhoneActivity.png" />-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.RemoteCameraActivity"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.WatchRemoteCameraActivity.png" />-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.WatchBluetoothControl"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.WatchBluetoothControl.png" />-->
+    <!--<children-->
+    <!--wearlauncher:ClassName="com.sczn.btconnect.activity.QRcodeAcitivity"-->
+    <!--wearlauncher:CustomIconName="com.example.bluetoothwat.QRcodeAcitivity.png" />-->
+    <!--</menu>-->
+
+</menulist>

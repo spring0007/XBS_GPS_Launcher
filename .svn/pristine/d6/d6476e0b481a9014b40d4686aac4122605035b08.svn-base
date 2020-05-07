@@ -1,0 +1,104 @@
+package com.sczn.wearlauncher.menu.fragment;
+
+import android.app.Fragment;
+import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.view.View;
+
+import com.sczn.wearlauncher.R;
+import com.sczn.wearlauncher.app.MxyLog;
+import com.sczn.wearlauncher.base.view.PagerRecylerView;
+import com.sczn.wearlauncher.menu.adapter.MenuCircleAdapter;
+import com.sczn.wearlauncher.menu.adapter.MenuCircleAdapter.OnCircleMenuClickListen;
+import com.sczn.wearlauncher.menu.view.MenuClockView;
+
+public class MenuCircleFragment extends absMenuFragment implements OnCircleMenuClickListen{
+	private static final String TAG = MenuCircleFragment.class.getSimpleName();
+
+	public static MenuCircleFragment newInstance(boolean isApp, boolean isStyle){
+		MenuCircleFragment fragment = new MenuCircleFragment();
+		Bundle bdl = new Bundle();
+		bdl.putBoolean(ARG_IS_APP, isApp);
+		bdl.putBoolean(ARG_IS_STYLE, isStyle);
+		fragment.setArguments(bdl);
+		return fragment;
+	}
+	public static final String FRAGMENT_TAG_MENU_CLOCK = "fragment_menu_clock"; 
+	
+	private PagerRecylerView mMenuCirclerView;
+	private MenuCircleAdapter menuCircleAdapter;
+	private MenuClockView menuClockView;
+	
+	@Override
+	protected int getLayoutResouceId() {
+		return R.layout.fragment_clockmenu_menu_circle;
+	}
+	
+	@Override
+	protected void initView() {
+		//menuClockView = findViewById(R.id.menu_circle_clock);
+		mMenuCirclerView = findViewById(R.id.menu_circle);
+		mMenuCirclerView.initLayoutManager(LinearLayoutManager.VERTICAL, false);
+		mMenuCirclerView.setFlingVelocity(PagerRecylerView.FLING_DIEABLE);
+		menuCircleAdapter = new MenuCircleAdapter(getActivity(), this, isStyle);
+		//mMenuCirclerView.setScrollingTouchSlop(RecyclerView.TOUCH_SLOP_PAGING);
+		mMenuCirclerView.setAdapter(menuCircleAdapter);
+	}
+
+	@Override
+	protected void initData() {
+		super.initData();
+		if(!isApp){
+			//menuCircleAdapter.setMenuList(SportListUtil.getSportList());
+		}else{
+			menuCircleAdapter.setMenuList(mAppListUtil.getAppList());
+		}
+	}
+	
+	@Override
+	public void onViewCreated(View view, Bundle savedInstanceState) {
+		super.onViewCreated(view, savedInstanceState);
+	}
+
+	@Override
+	protected void freshData() {
+		if(isApp){
+			menuCircleAdapter.setMenuList(mAppListUtil.getAppList());
+		}
+	}
+	
+	@Override
+	public void setUserVisibleHint(boolean isVisibleToUser) {
+		super.setUserVisibleHint(isVisibleToUser);
+		if(getActivity() == null || getChildFragmentManager() == null){
+			return;
+		}
+		final Fragment frament = getChildFragmentManager().findFragmentByTag(FRAGMENT_TAG_MENU_CLOCK);
+		if(frament != null){
+			frament.setUserVisibleHint(isVisibleToUser);
+		}
+	}
+	
+	@Override
+	public void onCircleMenuClick(View view) {
+		doMenuClick(view);
+	}
+	
+	@Override
+	protected void startFreshData() {
+		MxyLog.d(this, "startFreshData()");
+		super.startFreshData();
+		if(menuClockView != null){
+			//menuClockView.setShouldFresh(true);
+		}
+	}
+	
+	@Override
+	protected void endFreshData() {
+		MxyLog.d(this, "endFreshData()");
+		if(menuClockView != null){
+			//menuClockView.setShouldFresh(false);
+		}
+		super.endFreshData();
+	}
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_8"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/size_14"
+        android:background="@drawable/page_indicator_bg"
+        android:checkedButton="@+id/leftBtn"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/leftBtn"
+            android:layout_width="@dimen/size_6"
+            android:layout_height="@dimen/size_6"
+            android:button="@drawable/selector_page_indicator"
+            android:enabled="false"
+            android:scaleType="center" />
+
+        <RadioButton
+            android:id="@+id/rightBtn"
+            android:layout_width="@dimen/size_6"
+            android:layout_height="@dimen/size_6"
+            android:layout_marginLeft="@dimen/size_10"
+            android:button="@drawable/selector_page_indicator"
+            android:enabled="false"
+            android:scaleType="center" />
+
+    </RadioGroup>
+
+    <!--底部定义两个引导的点-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/size_3"
+        android:gravity="center_horizontal"
+        android:visibility="visible">
+        <!--第一引导点-->
+        <ImageView
+            android:id="@+id/img_first_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_bind_black_point" />
+        <!--第二引导点-->
+        <ImageView
+            android:id="@+id/img_second_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/size_5"
+            android:src="@drawable/icon_bind_white_point" />
+    </LinearLayout>
+
+</FrameLayout>

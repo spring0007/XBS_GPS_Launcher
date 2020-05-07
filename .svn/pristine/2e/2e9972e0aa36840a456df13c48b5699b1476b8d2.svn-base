@@ -1,0 +1,108 @@
+package com.sczn.wearlauncher.ruisocket;
+
+import android.content.Context;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.sczn.wearlauncher.app.MxyLog;
+
+public class HeartDatabaseUtil {
+    private HeartRateDBHelper helper;
+
+    public HeartDatabaseUtil(Context context) {
+        super();
+        helper = new HeartRateDBHelper(context);
+    }
+
+    /**
+     * 插入数据
+     *
+     * @param data
+     */
+    public boolean Insert(String data) {
+        SQLiteDatabase db = helper.getWritableDatabase();
+        String sql = "insert into " + HeartRateDBHelper.TABLE_NAME
+                + "(heartrate) values (" + "'" + data + "')";
+        try {
+            db.execSQL(sql);
+            return true;
+        } catch (SQLException e) {
+            MxyLog.e("err", "insert failed");
+            return false;
+        } finally {
+            db.close();
+        }
+
+    }
+
+    /**
+     * 删除数据
+     *
+     * @param id
+     */
+    public void Delete(int id) {
+        SQLiteDatabase db = helper.getWritableDatabase();
+        try {
+            int raw = db.delete(HeartRateDBHelper.TABLE_NAME, "_id=?",
+                    new String[]{id + ""});
+        } catch (Exception e) {
+            // TODO: handle exception
+        } finally {
+            db.close();
+        }
+    }
+
+    /**
+     * 查询数据
+     *
+     * @return
+     */
+    public String querydata() {
+        SQLiteDatabase db = helper.getReadableDatabase();
+        String heartrate = null;
+        try {
+            Cursor cursor = db.query(HeartRateDBHelper.TABLE_NAME, null, null, null,
+                    null, null, null);
+            if (cursor.getColumnCount() == 0) {
+                return null;
+            }
+            while (cursor.moveToNext()) {
+                heartrate = cursor.getInt(cursor.getColumnIndex("_id")) + " --- "
+                        + cursor.getString(cursor.getColumnIndex("heartrate"));
+                break;
+            }
+            cursor.close();
+        } catch (Exception e) {
+            // TODO: handle exception
+        } finally {
+            db.close();
+        }
+        return heartrate;
+    }
+
+    /**
+     * 按id查询
+     *
+     * @param id
+     * @return
+     */
+    public String queryByid(int id) {
+        SQLiteDatabase db = helper.getReadableDatabase();
+        String heartrate = null;
+        try {
+            Cursor cursor = db.query(HeartRateDBHelper.TABLE_NAME,
+                    new String[]{"heartrate"}, "_id=?", new String[]{id + ""},
+                    null, null, null);
+            // db.delete(table, whereClause, whereArgs)
+            while (cursor.moveToNext()) {
+                heartrate = cursor.getString(cursor.getColumnIndex("heartrate"));
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+        } finally {
+            db.close();
+        }
+        return heartrate;
+    }
+}

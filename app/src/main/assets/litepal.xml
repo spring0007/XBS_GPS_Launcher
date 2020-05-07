@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="wtwd_wear" />
+    <version value="17" />
+    <list>
+        <mapping class="com.sczn.wearlauncher.task.bean.TaskInfo" />
+        <mapping class="com.sczn.wearlauncher.socket.command.bean.Linkman" />
+        <mapping class="com.sczn.wearlauncher.socket.command.obtain.FenceObtain" />
+
+        <!--微聊群组-->
+        <mapping class="com.sczn.wearlauncher.chat.model.WechatGroupInfo" />
+        <mapping class="com.sczn.wearlauncher.chat.model.WechatMessageInfo" />
+
+        <!--日程提醒-->
+        <mapping class="com.sczn.wearlauncher.socket.command.bean.DayRemind" />
+    </list>
+</litepal>

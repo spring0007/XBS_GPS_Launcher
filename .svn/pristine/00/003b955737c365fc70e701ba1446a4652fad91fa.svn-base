@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transport">
+	  
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/healthalarm_circle"/>
+    
+    <RelativeLayout 
+        android:layout_marginTop="@dimen/healthalarm_card_padding_top"
+        android:layout_width="@dimen/card_circle_square_size"
+        android:layout_height="@dimen/card_circle_square_size"
+        android:layout_gravity="center_horizontal">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/card_weather_time"
+            android:text="@string/healthalarm_next_time"/>
+        
+        
+        <com.sczn.wearlauncher.base.view.ScrollerTextView 
+            android:id="@+id/healthalarm_sit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:maxWidth="@dimen/healthalarm_card_time_widrh"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/healthalarm_sit"
+            android:textColor="@color/normal_click_text"/>
+
+        
+        <com.sczn.wearlauncher.base.view.ScrollerTextView
+            android:id="@+id/healthalarm_drink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/healthalarm_card_time_widrh"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/healthalarm_drink"
+            android:textColor="@color/normal_click_text"/>
+    </RelativeLayout>
+</FrameLayout>

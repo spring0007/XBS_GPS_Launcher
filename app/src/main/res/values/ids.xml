@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <item type="id" name="view_root"></item>
+    <item type="id" name="view_ground"></item>
+    <item type="id" name="view_float"></item>
+    
+    <item type="id" name="bg"></item>
+    
+    <item type="id" name="tag_more_menu_position"></item>
+    
+    <item type="id" name="shortcut_first"></item>
+    <item type="id" name="shortcut_second"></item>
+    <item type="id" name="shortcut_third"></item>
+    <item type="id" name="shortcut_forth"></item>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/size_6"
+    android:paddingTop="@dimen/size_6">
+
+    <ImageView
+        android:id="@+id/signal_view"
+        android:layout_width="@dimen/size_28"
+        android:layout_height="@dimen/size_18"
+        android:layout_marginLeft="@dimen/size_4"
+        tools:src="@drawable/icon_signal_bad"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mobile_view"
+        android:layout_width="@dimen/size_20"
+        android:layout_height="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_2"
+        android:visibility="gone"
+        tools:src="@drawable/icon_2g"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/wifi_view"
+        android:layout_width="@dimen/size_20"
+        android:layout_height="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_2"
+        android:visibility="visible"
+        tools:src="@drawable/icon_wifi_bad" />
+
+    <ImageView
+        android:id="@+id/sync_view"
+        android:layout_width="@dimen/size_26"
+        android:layout_height="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_2"
+        tools:src="@drawable/lc_icon_sync_g_ing" />
+
+    <ImageView
+        android:id="@+id/volte_view"
+        android:layout_width="@dimen/size_20"
+        android:layout_height="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_2"
+        android:src="@drawable/lc_icon_hd"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/gps_state_view"
+        android:layout_width="@dimen/size_20"
+        android:layout_height="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_2"
+        android:src="@drawable/lc_icon_gps_now"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/signal_progress_view"
+        android:layout_width="@dimen/size_20"
+        android:layout_height="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_4"
+        android:src="@drawable/icon_network_type_loading"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/size_2">
+
+        <ImageView
+            android:id="@+id/battery_view"
+            android:layout_width="@dimen/size_28"
+            android:layout_height="@dimen/size_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_4"
+            android:background="@drawable/icon_cd_0004" />
+
+    </RelativeLayout>
+</LinearLayout>

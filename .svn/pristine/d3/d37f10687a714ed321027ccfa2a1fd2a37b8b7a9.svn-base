@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transport">
+	  
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/geographic_circle"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        
+        <TextView
+            android:id="@+id/geographic_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/card_weather_time"
+            android:textColor="@color/normal_text"
+            android:padding="30dp"
+            android:gravity="center_horizontal"/>
+        
+        <FrameLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            
+            <TextView 
+	            android:id="@+id/geographic_atmosphere"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:padding="5dp"
+	            android:drawableLeft="@drawable/geographic_atmosphere"/>
+            
+            <ProgressBar 
+	            android:id="@+id/atmosphere_progress"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:indeterminateDrawable="@drawable/progressbar_animation"/>
+            
+        </FrameLayout>
+        
+        <FrameLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            
+            <TextView
+	            android:id="@+id/geographic_aititude"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:padding="5dp"
+	            android:drawableLeft="@drawable/geographic_aaltitude"/>
+            
+            <ProgressBar 
+	            android:id="@+id/aititude_progress"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:indeterminateDrawable="@drawable/progressbar_animation"/>
+            
+        </FrameLayout>
+        
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wearlauncher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.sczn.wearlauncher.card.view.CircleBarView
+        android:id="@+id/sport_circle_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        wearlauncher:padingOut="@dimen/circle_bar_padding_out"
+        wearlauncher:progress_color="@color/circle_bar_active"
+        wearlauncher:progress_colorBg="@color/circle_bar_bg"
+        wearlauncher:stroke_width="@dimen/size_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/step_count" />
+
+        <TextView
+            android:id="@+id/step_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/step_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/step_target"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="@dimen/card_circle_square_size"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/step_dis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/step_dis"
+                android:gravity="center"
+                android:paddingEnd="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/step_cal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/step_cal"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

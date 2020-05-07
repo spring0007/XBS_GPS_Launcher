@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">沃特小博士2</string>
+    <string name="logo">WearOS</string>
+
+    <string name="bad_network">Bad network.</string>
+
+    <string name="done">Done</string>
+    <string name="Unkown">Unknow</string>
+    <string name="Empty">Empty list</string>
+    <string name="delete">Delete</string>
+
+    <string name="equal"> = </string>
+    <string name="ml"> ml</string>
+
+    <string name="power_connect">Power Connected</string>
+    <string name="power_disconnect">Power Disconnected</string>
+
+    <string name="db_unusual">DB Opretion Unusual</string>
+    <string name="db_opration_success">DB Opretion success</string>
+
+    <!-- error -->
+    <string name="error_title">UncaughtException</string>
+    <string name="apk_restart">Restart Apk</string>
+
+    <!-- menu -->
+    <string name="menu_more">More</string>
+    <string name="skin_change">Skin</string>
+    <string name="bg_change">Background</string>
+    <string name="bg_change_success">Modify success.</string>
+
+
+    <string name="title_notification">Notification</string>
+    <string name="notification_clear">Clear</string>
+    <string name="notification_none">No Notification</string>
+    <string name="notification_closed">Close</string>
+
+    <!--exit dialog-->
+    <string name="exit_dialog_title">Exit</string>
+    <string name="exit_dialog_msg">Please make sure the power is off ?</string>
+    <string name="exit_dialog_ok">OK</string>
+    <string name="exit_dialog_cancel">Cancel</string>
+
+    <!-- lantin style -->
+    <string name="lantin_middle">lantinMiddle</string>
+    <string name="lantin_small">lantinSmall</string>
+    <!-- app folder name -->
+    <string name="health_text">Health</string>
+    <string name="clock_text">Clock</string>
+    <string name="video_text">Audio Center</string>
+    <string name="tools_text">Tools</string>
+    <string name="control_text">Remote Control</string>
+    <string name="watch_manage_text">Watch Manage</string>
+    <string name="multimedia_center_text">Multimedia Center</string>
+    <string name="correspond_text">Communication</string>
+    <string name="remind_text">Health Remind</string>
+    <string name="style_text">Style</string>
+    <string name="assist_android">Android Assistant</string>
+    <string name="assist_ios">IOS Assistant</string>
+    <string name="qr_code">QR Code</string>
+    <string name="call">Call</string>
+    <string name="contact">Contact</string>
+    <string name="chat">Chat</string>
+
+    <!-- app card name -->
+    <string name="card_compass">Compass</string>
+
+    <string name="card_uvray">Uvray</string>
+    <string name="card_uvray_title_text">UV</string>
+    <string name="card_uvray_index_text_low">Low</string>
+    <string name="card_uvray_index_text_normal">Normal</string>
+    <string name="card_uvray_index_text_high">Heigh</string>
+    <string name="card_uvray_index_text_very_heigh">Very Heigh</string>
+    <string name="card_uvray_index_text_strong">Strong</string>
+    <string name="card_sleep">Sleep</string>
+    <string name="card_steps">Steps</string>
+    <string name="card_sport">Sport</string>
+    <string name="card_weather">Weather</string>
+    <string name="card_health">Health</string>
+    <string name="card_heart_rate">Heart rate</string>
+    <string name="card_temperature">Temperature</string>
+
+    <string name="card_altitude">Altitude</string>
+
+    <!-- app status icon -->
+    <string name="status_qrcode">BtConnect</string>
+    <string name="status_setting">Setting</string>
+    <string name="status_battery">%1$s%</string>
+    <string name="status_sim">SIM</string>
+    <string name="status_bt">BT</string>
+    <string name="status_wifi">Wifi</string>
+    <string name="status_mode">Mode</string>
+    <string name="status_sos">SOS</string>
+    <string name="status_volume">Volume</string>
+    <string name="status_brightness">Brightness</string>
+    <string name="status_recent">Recent App</string>
+    <string name="status_raisescreen">Raise Screen</string>
+    <string name="status_shutdown">ShutDown</string>
+
+    <string name="date_year">-</string>
+    <string name="date_mon">-</string>
+    <string name="date_day"> </string>
+
+    <string name="weekday_mon">Mon</string>
+    <string name="weekday_tue">Tues</string>
+    <string name="weekday_wed">Wednes</string>
+    <string name="weekday_thu">Thurs</string>
+    <string name="weekday_fri">Fri</string>
+    <string name="weekday_sat">Satur</string>
+    <string name="weekday_sun">Sun</string>
+
+    <string name="status_battery_normal">%1$s%%</string>
+    <string name="status_battery_charging">charging</string>
+    <string name="status_battery_full">fullycharged</string>
+    <string name="status_qrcode_empty">Please Make Sure Bluetooth work normal!</string>
+    <string name="status_qrcode_preparing">Create QRcode...</string>
+    <string name="status_qrcode_error">QRcode Create Failer!</string>
+
+    <string name="brightness_title">Brightness</string>
+    <string name="brightness_auto">Auto</string>
+    <string name="volume_title">Volume</string>
+    <string name="volume_mulrimedia">Multimedia And Other</string>
+    <string name="volume_ring">Ring And Notification</string>
+    <string name="volume_alarm">Alarm</string>
+
+    <string name="sim_unvaluable">SIM Unvaluable!</string>
+
+    <string name="mode_silent">Silent</string>
+    <string name="mode_vibrate">Vibrate</string>
+    <string name="mode_normal">Normal</string>
+    <string name="mode_curr">Change To %1$s Mode</string>
+
+    <string name="shortcut_no">Not Add</string>
+    <string name="shortcut_loading">Loadding</string>
+    <string name="shortcut_first">First ShortCut</string>
+    <string name="shortcut_second">Second ShortCut</string>
+    <string name="shortcut_setting_toast">Setting ShortCut cannot be delete</string>
+
+    <!-- sports -->
+    <string name="sport_history">Sports History</string>
+    <string name="sport_setting">Sports Setting</string>
+    <string name="sport_marathon_half">Marathon Half</string>
+    <string name="sport_marathon_full">Marathon Full</string>
+    <string name="sport_walking">Walking</string>
+    <string name="sport_mountain">Mountain</string>
+    <string name="sport_cross_country">Cross Country</string>
+    <string name="sport_run_outdoor">Run OutDoor</string>
+    <string name="sport_run_indoor">Run inDoor</string>
+
+    <!-- clock skin -->
+    <string name="clcock_skin_loadind">Clock Skin Loadding...</string>
+    <string name="clcock_skin_loader_error">Clock Skin Loader Error</string>
+
+    <!-- cards -->
+    <string name="health_title_text">Test After 3 Seconds</string>
+    <string name="sport_step_unit">step</string>
+    <string name="sport_cal_unit">cal</string>
+    <string name="sport_km_unit">km</string>
+    <string name="sleep_hours_unit">h</string>
+    <string name="deep_sleep_hours_unit">h(Deep)</string>
+    <string name="light_sleep_hours_unit">h(Light)</string>
+    <string name="sleep_state_good">Good</string>
+    <string name="sleep_state_bad">Bad</string>
+    <string name="sleep_state_normal">Normal</string>
+    <string name="sleep_state_null">No Data</string>
+    <string name="compass_calibration">Wrist Rotation \n And Calibration</string>
+    <string name="compass_calibration_success">Calibration Successed</string>
+
+    <!-- bt -->
+    <string name="bt_style_choose_android">Android</string>
+    <string name="bt_style_choose_ios">IOS</string>
+    <string name="bt_connecet_android">Connect to Android</string>
+    <string name="bt_connecet_ios">Connect to IOS</string>
+    <string name="bt_connecet_qrcode_enlarge">Click To Show Qrcode</string>
+    <string name="bt_connecet_ios_adv">start adv</string>
+    <string name="bt_connecet_android_guide"><Data><![CDATA[ 
+        		Please open the "<font color="#f27c1c"><b>Fitcare</b></font>" App in your Phone.<br/> Then open 
+        		"<font color="#f27c1c"><b>More</b></font>" ,open
+        		"<font color="#f27c1c"><b>Connection To Watch</b></font>" ,through
+        		"<font color="#f27c1c"><b>Scan</b></font>" scan the QRcode below
+        ]]></Data></string>
+    <string name="bt_connecet_ios_guide"><Data><![CDATA[ 
+        		Please open the "FunFit" App in your Phone.<br/> Then click
+        		"<font color="#f27c1c"><b>Start Pair</b></font>". <br/> Then open
+        		"<font color="#f27c1c"><b>More</b></font>" in app,open
+        		"<font color="#f27c1c"><b>Connection To Watch</b></font>", click
+        		"<font color="#f27c1c"><b>Search</b></font>" to start search watch,
+        		click the item named like "%1$s" to complete the pair.
+        ]]></Data></string>
+
+    <!-- sos -->
+    <string name="sos_no_number">Please Set Sos Number</string>
+    <string name="sos_number_set_success">Set Sos Number Successfull</string>
+
+    <!-- cards -->
+    <string name="heart_rate_begin">Test \nAfter Three Second</string>
+    <string name="heart_rate_error">Heart rate measurement error, to ensure that the watch close to the arm</string>
+    <string name="heart_rate_is_testing">Is Testing</string>
+    <string name="heart_rate_current">Current Heart Rate</string>
+    <string name="pressure_bad_signal">Bad Network</string>
+    <string name="click_test">Click Measurement</string>
+    <string name="test_again">Test again</string>
+
+    <!-- card activity -->
+    <string name="app_uv_name">UV Index</string>
+    <string name="app_alt_name">Altitude</string>
+    <string name="app_air_pressure_name">Air Pressure</string>
+    <string name="app_compass_name">Compass</string>
+    <string name="app_step_count_name">Steps</string>
+
+    <string name="current_uv_index_text">Current UV Index</string>
+    <string name="recent_uv_text">24h UV Changes</string>
+
+    <string name="current_air_pressure_index_text">Current Air Pressure</string>
+    <string name="recent_air_pressure_text">24h Air Pressure Changes</string>
+
+    <string name="current_alt_index_text">Current Alt</string>
+    <string name="recent_alt_text">24h Alt Changes</string>
+
+    <string name="compass_location_text">Click To Open GPS \n And Get Location</string>
+    <string name="compass_locating">Getting  Location Information</string>
+    <string name="compass_gps_good_text">Getting  Location Information</string>
+    <string name="compass_gps_bad_text">Signal Difference Please Later</string>
+    <string name="compass_current_location_text">Current Location</string>
+    <string name="compass_gps_north">°N</string>
+    <string name="compass_gps_south">°S</string>
+    <string name="compass_gps_west">°W</string>
+    <string name="compass_gps_east">°E</string>
+    <string name="compass_degree">°</string>
+
+    <string name="alt_unit">M</string>
+    <string name="pressure_unit">hPa</string>
+    <string name="temp_unit">°C</string>
+
+    <string name="today_steps">Today Steps</string>
+
+    <string name="sleep_none">None</string>
+    <string name="sleep_deep">Deep</string>
+    <string name="sleep_light">Light</string>
+    <string name="sleep_all">All Time</string>
+    <string name="sleep_unit">h</string>
+
+    <string name="heartrate_record">HeartRate</string>
+    <string name="heartrate_unit">bmp</string>
+    <string name="heartrate_history">Recent HeartRate Record</string>
+    <string name="heartrate_none">Please remian enought time to show the variation tendency!</string>
+    <string name="weather_temp">%1$s°C</string>
+
+    <!-- healthAlarm -->
+    <string name="healthalarm">HealthAlarm</string>
+    <string name="healthalarm_drink">Drink Alarm</string>
+    <string name="healthalarm_sit">Sit Alarm</string>
+    <string name="healthalarm_next_time">Next Alarm Time \n (today) </string>
+    <string name="drink_much">Cup</string>
+    <string name="drink_little">Bite</string>
+    <string name="healthalarm_setting">Setting</string>
+    <string name="healthalarm_list">Alarm List</string>
+    <string name="drink_count">Drinked: %1$s ml</string>
+    <string name="drink_target">Target: %1$s ml</string>
+    <string name="alarm_count_limit">The Max Count Limited</string>
+    <string name="pick_weekday_noone">Just Once</string>
+    <string name="pick_weekday_mo">Mo</string>
+    <string name="pick_weekday_tu">Tu</string>
+    <string name="pick_weekday_we">We</string>
+    <string name="pick_weekday_th">Th</string>
+    <string name="pick_weekday_fr">Fr</string>
+    <string name="pick_weekday_sa">Sa</string>
+    <string name="pick_weekday_su">Su</string>
+    <string name="alarm_repeat">Repeat</string>
+    <string name="alarm_sava_success">Alarm Saved Success</string>
+    <string name="alarm_sava_failed">Alarm Saved Failure</string>
+    <string name="alarm_none">None</string>
+    <string name="alarm_add">Add</string>
+    <string name="alarm_at">HealthAlarm will Trigger After  %1$sH %2$sM %3$sS</string>
+    <string name="alarm_ok">Ok</string>
+    <string name="alarm_goto_drink">Goto Drink</string>
+    <string name="drink_setting_reset">Reset</string>
+    <string name="drink_setting_clear">Clear</string>
+    <string name="drink_setting_sava">Sava</string>
+    <string name="drink_setting_sava_failued">Sava Failued</string>
+    <string name="drink_target_value">Target</string>
+    <string name="drink_already_value">Drinked</string>
+
+    <!-- geographic -->
+    <string name="geographic_atmosphere"> %1$s hpa</string>
+    <string name="geographic_altitude"> %1$s m</string>
+    <string name="weather_get_success">Get Weather Succed</string>
+
+    <string name="weather_sunny">SUNNY</string>
+    <string name="weather_rain">RAIN</string>
+    <string name="weather_cloudy">CLOUDY</string>
+    <string name="weather_windy">WINDY</string>
+    <string name="weather_snow">SNOW</string>
+
+    <!-- step -->
+    <string name="step_dis"> %1$s\nKM</string>
+    <string name="step_cal"> %1$s\nKCAL</string>
+
+    <!-- user info -->
+    <string name="userinfo_title">User Info</string>
+    <string name="userinfo_name">NickName</string>
+    <string name="userinfo_sex">Sex</string>
+    <string name="userinfo_height">Height</string>
+    <string name="userinfo_weight">Weight</string>
+    <string name="userinfo_targett">SportTarget</string>
+    <string name="userinfo_target_step">Target Steps</string>
+    <string name="userinfo_target_step_illegal">Value Illegal</string>
+
+    <string name="userinfo_name_unsettting">Not Setted</string>
+    <string name="userinfo_sex_man">Man</string>
+    <string name="userinfo_sex_woman">Woman</string>
+    <string name="userinfo_height_value">%1$scm</string>
+    <string name="userinfo_weight_value">%1$skg</string>
+
+    <string name="userinfo_data_changed">Userindo has changed.</string>
+
+    <string name="bind_title">Bind Information</string>
+    <string name="bind_sure">Sure</string>
+    <string name="bind_cancel">Cancel</string>
+    <string name="bind_content">want to bind your device, do you agree?</string>
+    <string name="tips_qrcode">Scan the QR code to bind the watch</string>
+    <string name="un_bind_content">want to unbind your device, do you agree?</string>
+
+    <!--setting-->
+    <string name="setting">Setting</string>
+    <string name="setting_wlan">WLAN</string>
+    <string name="setting_dial_type">Dial style</string>
+    <string name="setting_clock_style_text">Clock Style</string>
+    <string name="setting_clock_style_1">Analog dial</string>
+    <string name="setting_clock_style_2">Digital dial</string>
+    <string name="setting_theme_style">Theme Style</string>
+    <string name="setting_bind">Bind</string>
+    <string name="setting_volume">Volume</string>
+    <string name="setting_brightness">Brightness</string>
+    <string name="setting_profile">Profile</string>
+    <string name="setting_about">About</string>
+    <string name="setting_fota">Fota</string>
+    <string name="setting_volte">Volte</string>
+    <string name="setting_shutdown">Shutdown</string>
+    <string name="setting_other">Other</string>
+
+    <string name="setting_profile_silent">Silent</string>
+    <string name="setting_profile_vibrate">Vibrate</string>
+    <string name="setting_profile_ring">Ring</string>
+    <string name="setting_profile_ring_vibrate">Ring and vibrate</string>
+
+    <string name="setting_about_company">Company：%s</string>
+    <string name="setting_about_version_name">Version name：%s</string>
+    <string name="setting_about_version_date">Version date：%s</string>
+    <string name="setting_about_internal_storage">Internal storage：%s</string>
+    <string name="setting_about_imei">IMEI：%s</string>
+    <string name="setting_about_system_name">System：Android</string>
+
+    <string name="horizontal_layout">Horizontal Layout</string>
+    <string name="gird_layout">Gird Layout</string>
+
+    <!--已经连接的字符串的配置-->
+    <string name="wifi_state_connected">Connected</string>
+    <string name="wifi_state_connecting">Connecting</string>
+    <string name="wifi_state_unconnect">Unconnected</string>
+    <string name="wifi_state_disconnect">Connection problem</string>
+
+    <string name="setting_wlan_password_input">Please input password</string>
+    <string name="setting_wlan_no_result">No scan results</string>
+    <string name="setting_wlan_no_enable">WIFI not enabled</string>
+    <string name="setting_wlan_connect_begin">Start to connect WIFI</string>
+
+    <string name="long_audio_error_text">Sorry.</string>
+
+    <string name="already_upgrade">Already the latest version.</string>
+
+    <string name="phone_no_phone">No Phone</string>
+    <string name="launcher_main_sim_not_ok">No sim card inserted</string>
+
+    <string name="setting_shutdown_not_allow">No shutdown allowed!</string>
+    <string name="setting_shutdown_ask">Shutdown</string>
+    <string name="setting_shutdown_now">System is off ,please wait</string>
+
+    <string name="guide_tips_msg">Scan guide</string>
+    <string name="download_tips">Scan the download app</string>
+    <string name="guide_next_page">If installed, please go to the next page</string>
+
+    <string name="guide_tip_title_1">scan and install app</string>
+    <string name="guide_tip_title_2">Scan and bind</string>
+    <string name="guide_tip_2">Scan the qr code and download the App</string>
+    <string name="guide_tip_3">N\nE\nX\nT</string>
+    <string name="guide_tip_4">Scan the qr:%s</string>
+    <string name="guide_tip_5">D\nO\nW\nN</string>
+    <string name="guide_tip_6">Try again</string>
+    <string name="guide_tip_7">The binding code is empty</string>
+    <string name="guide_tip_8">Watch bind code</string>
+
+    <!--交朋友-->
+    <string name="shake_friend">friend</string>
+    <string name="please_register">Please register first</string>
+    <string name="already_add_group">Added to your discussion group.</string>
+    <string name="voice">Voice</string>
+    <string name="shake">Shake</string>
+    <string name="search_friends_tip">Start.</string>
+    <string name="search_friends">Search for friends...</string>
+    <string name="not_search_friends">Not Search Friends.</string>
+    <string name="search_friends_fail">Search Friends Fail.</string>
+
+    <string name="load_chat_group_fail">Load error,try again please.</string>
+    <string name="send_msg_error">Send message error,try again please.</string>
+
+    <!-- 微聊 -->
+    <string name="syncing">Syncing</string>
+    <string name="group">Group</string>
+    <string name="expression">Expression</string>
+    <string name="not_recorded">Not Recorded.</string>
+    <string name="no_friends">No Friends.</string>
+
+    <!-- 课程表 -->
+    <string name="schedule">Schedule</string>
+    <string name="no_schedule">No Schedule</string>
+    <string name="in_class">In Class~</string>
+    <string name="now_is">Now Is:</string>
+    <string name="next_class">Next Class Is:</string>
+
+    <!---->
+    <string name="calculator">Calculator</string>
+
+    <string name="tips">Tips</string>
+    <string name="cancel">Cancel</string>
+    <string name="sure">Ok</string>
+    <string name="set_up_new_remind">Setup New Remind</string>
+    <string name="unknown">unknown</string>
+
+    <!--视频通话-->
+    <string name="video">Video</string>
+
+    <!---->
+    <string name="find">Find</string>
+
+    <string-array name="input_type_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="input_type_letter">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>e</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>i</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>m</item>
+        <item>n</item>
+        <item>o</item>
+        <item>p</item>
+        <item>q</item>
+        <item>r</item>
+        <item>s</item>
+        <item>t</item>
+        <item>u</item>
+        <item>v</item>
+        <item>w</item>
+        <item>x</item>
+        <item>y</item>
+        <item>z</item>
+    </string-array>
+
+    <!--http://blog.csdn.net/z1074971432/article/details/12753539-->
+    <string-array name="input_type_symbol">
+        <item> </item>
+        <item>~</item>
+        <item>`</item>
+        <item>!</item>
+        <item>\u0040</item>
+        <item>#</item>
+        <item>$</item>
+        <item>%</item>
+        <item>^</item>
+        <item>&#038;</item>
+        <item>*</item>
+        <item>(</item>
+        <item>)</item>
+        <item>-</item>
+        <item>_</item>
+        <item>=</item>
+        <item>+</item>
+        <item>[</item>
+        <item>{</item>
+        <item>]</item>
+        <item>}</item>
+        <item>;</item>
+        <item>:</item>
+        <item>\'</item>
+        <item>\"</item>
+        <item>\\</item>
+        <item>|</item>
+        <item>,</item>
+        <item>&#060;</item>
+        <item>.</item>
+        <item>></item>
+        <item>/</item>
+        <item>\?</item>
+    </string-array>
+</resources>

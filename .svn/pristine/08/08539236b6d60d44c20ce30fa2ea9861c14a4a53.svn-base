@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView 
+        android:id="@+id/drink_title"
+        style="@style/title_style"
+        android:text="@string/healthalarm_setting"/>
+    
+    <LinearLayout 
+        android:id="@+id/bottom"
+        style="@style/bottom_text_style"
+        android:orientation="horizontal">   
+        
+        <TextView android:id="@+id/drink_setting_reset"
+            style="@style/bottom_text_start_style"
+            android:text="@string/drink_setting_sava"/>
+        
+        <TextView android:id="@+id/drink_setting_clear"
+            style="@style/bottom_text_end_style"
+            android:text="@string/drink_setting_clear"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_below="@id/drink_title"
+        android:layout_above="@id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/item_notification_padding"
+        android:paddingEnd="@dimen/item_notification_padding">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drink_target_value"/>
+            
+            <EditText 
+                android:id="@+id/drink_target"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@null"
+                android:digits="1234567890" 
+            	android:inputType="phone|number" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/ml"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equal"
+                android:drawableStart="@drawable/drink_much"
+                android:drawablePadding="5dp"/>
+            
+            <EditText 
+                android:id="@+id/drink_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@null"
+                android:digits="1234567890" 
+            	android:inputType="phone|number" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/ml"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equal"
+                android:drawableStart="@drawable/drink_little"
+                android:drawablePadding="10dp"/>
+            
+            <EditText 
+                android:id="@+id/drink_little"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:digits="1234567890" 
+                android:gravity="center"
+                android:background="@null"
+            	android:inputType="phone|number" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/ml"/>
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drink_already_value"/>
+            
+            <TextView 
+                android:id="@+id/drink_already"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/ml"/>
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+ 
+    
+
+</RelativeLayout>

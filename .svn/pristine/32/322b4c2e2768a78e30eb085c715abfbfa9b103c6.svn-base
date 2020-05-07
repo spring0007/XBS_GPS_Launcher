@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wearlauncher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transport"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.sczn.wearlauncher.status.view.BatteryIcon
+            android:id="@+id/status_battery"
+            style="@style/style_status_icon_contain"
+            wearlauncher:imageId="@drawable/statu_icon_mode_on"
+            wearlauncher:stringId="@string/status_battery" />
+
+        <com.sczn.wearlauncher.status.view.SimIcon
+            android:id="@+id/status_sim"
+            style="@style/style_status_icon_contain"
+            wearlauncher:imageId="@drawable/statu_icon_sim_0"
+            wearlauncher:stringId="@string/status_sim" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/status_icon_horizontal_gap" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.sczn.wearlauncher.status.view.BtIcon
+            android:id="@+id/status_bt"
+            style="@style/style_status_icon_contain"
+            wearlauncher:imageId="@drawable/statu_icon_bt_off"
+            wearlauncher:stringId="@string/status_bt" />
+
+        <com.sczn.wearlauncher.status.view.WifiIcon
+            android:id="@+id/status_wifi"
+            style="@style/style_status_icon_contain"
+            wearlauncher:imageId="@drawable/statu_icon_wifi_off"
+            wearlauncher:stringId="@string/status_wifi" />
+    </LinearLayout>
+</LinearLayout>

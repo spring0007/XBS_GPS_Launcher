@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sczn.wearlauncher"
+    android:installLocation="auto">
+
+    <!--build正式版本需要添加-->
+    <!--android:sharedUserId="android.uid.system">-->
+
+    <!-- 覆盖弹窗 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- 开机广播 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 锁屏时弹出activity -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 应用安装 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <!--急救 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 闹钟权限 -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- GPS权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+
+    <!-- 调用相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!--关机权限-->
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+
+    <!--记步需要权限-->
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!--修改时区-->
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <!--系统重启-->
+    <uses-permission android:name="android.permission.REBOOT" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
+
+    <application
+        android:name=".app.LauncherApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.AppCompat.Fullscreen"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:theme,android:supportsRtl">
+
+        <!-- activity -->
+        <activity
+            android:name="com.sczn.wearlauncher.MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MONKEY" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--滑动表盘后进入切换进入的activity-->
+        <activity android:name=".ItemMenuActivity" />
+
+        <!-- 菜单样式选择 -->
+        <activity android:name="com.sczn.wearlauncher.menu.activity.StyleChooseActivity">
+            <intent-filter>
+                <action android:name="StyleChooseActivity" />
+            </intent-filter>
+        </activity>
+
+        <!-- 二维码页面 -->
+        <activity android:name="com.sczn.wearlauncher.btconnect.QrcodeActivity">
+            <intent-filter>
+                <action android:name="QrcodeActivity" />
+            </intent-filter>
+        </activity>
+
+        <!-- 设置页面 -->
+        <activity android:name=".setting.SettingActivity">
+            <intent-filter>
+                <action android:name="SettingActivity" />
+            </intent-filter>
+        </activity>
+
+        <!-- 通讯录 -->
+        <activity android:name=".contact.ContactActivity">
+            <intent-filter>
+                <action android:name="ContactActivity" />
+            </intent-filter>
+        </activity>
+
+        <!-- 课程表 -->
+        <activity android:name=".task.TaskInfoActivity">
+            <intent-filter>
+                <action android:name="TaskInfoActivity" />
+            </intent-filter>
+        </activity>
+
+        <!-- 计算器 -->
+        <activity android:name=".activity.CalculatorActivity">
+            <intent-filter>
+                <action android:name="CalculatorActivity" />
+            </intent-filter>
+        </activity>
+
+        <!-- 调节音量 -->
+        <activity android:name=".setting.VolumeActivity" />
+        <!-- 表盘皮肤更换 -->
+        <activity android:name=".setting.SelectIndexSkinActivity" />
+        <!-- 亮度调节 -->
+        <activity android:name=".setting.BrightnessActivity" />
+        <!-- 情景模式 -->
+        <activity android:name=".setting.RingerModeActivity" />
+        <!-- 关于我们 -->
+        <activity android:name=".setting.AboutActivity" />
+        <!-- WiFi页面 -->
+        <activity android:name=".setting.WLANListActivity" />
+        <activity android:name=".setting.WLANInputActivity" />
+
+        <!-- app menu样式切换 -->
+        <activity android:name=".setting.AppMenuStyleActivity" />
+
+        <!-- layout测试用的页面 -->
+        <activity android:name=".setting.LayoutTestActivity" />
+
+        <!-- 关机页面 -->
+        <activity android:name=".setting.ShutDownActivity" />
+
+        <!-- 绑定向导 -->
+        <activity android:name=".setting.BindDeviceActivity" />
+
+        <!-- VerifyCode -->
+        <activity android:name=".setting.VerifyCodeActivity" />
+
+        <!-- 通知页面 -->
+        <activity android:name="com.sczn.wearlauncher.notification.ActivityNotification" />
+
+        <!-- 蓝牙连接 -->
+        <activity android:name="com.sczn.wearlauncher.btconnect.BtConnectActivity" />
+        <activity android:name="com.sczn.wearlauncher.btconnect.BtStyleChooseActivity" />
+
+        <!-- 快捷菜单 -->
+        <activity
+            android:name="com.sczn.wearlauncher.shortcut.ShortCutActivity"
+            android:launchMode="singleInstance" />
+
+        <!-- 睡眠-->
+        <activity android:name="com.sczn.wearlauncher.card.sport.SleepActivity" />
+
+        <!-- 运动 -->
+        <activity android:name="com.sczn.wearlauncher.card.sport.StepCountActivity" />
+
+        <!-- 静默拍照 -->
+        <activity
+            android:name="com.sczn.wearlauncher.ruisocket.CameraActivity"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="WEARABLE_ROMOTE_CAMERA" />
+                <action android:name="WEARABLE_SOS_CAMERA" />
+
+            </intent-filter>
+        </activity>
+
+        <!-- 用户信息 -->
+        <activity android:name="com.sczn.wearlauncher.userinfo.ActivityUserInfo" />
+
+        <!-- **********************闹钟模块start********************** -->
+        <!-- **********************闹钟模块start********************** -->
+        <activity android:name="cn.com.waterworld.alarmclocklib.AlarmClockActivity">
+            <intent-filter>
+                <action android:name="AlarmClockActivityModel" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.com.waterworld.alarmclocklib.SetAlarmActivity" />
+        <activity android:name="cn.com.waterworld.alarmclocklib.ChooseTimeActivity" />
+        <activity android:name="cn.com.waterworld.alarmclocklib.ChooseWeekActivity" />
+        <activity android:name="cn.com.waterworld.alarmclocklib.AlarmDetailActivity" />
+        <activity android:name="cn.com.waterworld.alarmclocklib.NewChooseTimeActivity" />
+
+        <!-- 响铃的页面 -->
+        <activity android:name=".activity.AlarmClockRingActivity" />
+
+        <!-- 闹钟时间到监听广播 -->
+        <receiver android:name=".receiver.AlarmClockReceiver">
+            <intent-filter>
+                <action android:name="cn.com.waterworld.alarm.clock" />
+            </intent-filter>
+        </receiver>
+        <!-- *****************************闹钟模块end***************************** -->
+        <!-- *****************************闹钟模块end***************************** -->
+
+
+        <!-- *****************************交朋友start***************************** -->
+        <!-- *****************************交朋友start***************************** -->
+        <activity android:name=".friend.activity.ShakeActivity">
+            <intent-filter>
+                <action android:name="ShakeActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".friend.activity.SettingActivity" />
+        <!-- *****************************交朋友end***************************** -->
+        <!-- *****************************交朋友end***************************** -->
+
+        <!-- *****************************微聊start***************************** -->
+        <!-- *****************************微聊start***************************** -->
+        <activity android:name=".chat.activitys.EmojiActivity" />
+        <activity android:name=".chat.activitys.ChatMsgListActivity" />
+        <activity android:name=".chat.activitys.ChatGroupListActivity">
+            <intent-filter>
+                <action android:name="ChatGroupListActivity" />
+            </intent-filter>
+        </activity>
+
+        <!-- *****************************微聊end***************************** -->
+        <!-- *****************************微聊end***************************** -->
+
+
+        <!-- service -->
+        <service android:name="com.sczn.wearlauncher.OperationService" />
+
+        <!-- 新的socket通讯协议 -->
+        <service android:name=".socket.WaterSocketService" />
+
+        <!--SOS-->
+        <service android:name=".services.SosService" />
+
+        <!-- receiver -->
+        <receiver android:name="com.sczn.wearlauncher.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 照相的Receiver -->
+        <receiver
+            android:name="com.sczn.wearlauncher.receiver.CameraReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action
+                    android:name="android.hardware.action.NEW_PICTURE"
+                    tools:ignore="BatteryLife" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </receiver>
+
+        <!-- provider -->
+        <provider
+            android:name="com.sczn.wearlauncher.db.ProviderStep"
+            android:authorities="com.sczn.wearlauncher.db.ProviderStep"
+            android:exported="true" />
+        <provider
+            android:name="com.sczn.wearlauncher.db.ProviderSleep"
+            android:authorities="com.sczn.wearlauncher.db.ProviderSleep"
+            android:exported="true" />
+        <provider
+            android:name="com.sczn.wearlauncher.db.ProviderHealthAlarm"
+            android:authorities="com.sczn.wearlauncher.db.ProviderHealthAlarm"
+            android:exported="false" />
+    </application>
+
+</manifest>

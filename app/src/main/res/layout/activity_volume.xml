@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#263238"
+        android:paddingBottom="@dimen/size_10"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingTop="@dimen/size_10"
+        android:text="@string/setting_volume"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_24" />
+
+
+    <LinearLayout
+        android:id="@+id/lv_volume_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_30"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/size_36"
+            android:layout_height="@dimen/size_36"
+            android:src="@drawable/icon_volume"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_volume"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_30" />
+    </LinearLayout>
+
+    <com.sczn.wearlauncher.setting.util.SeekBarWithMark
+        android:id="@+id/seek_bar"
+        android:layout_width="@dimen/size_240"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:sbw_isShowPoint="false"
+        app:sbw_markDescArray="0|1|2|3|"
+        app:sbw_markItemNum="4"
+        app:sbw_markTextSize="@dimen/text_size_24"
+        app:sbw_thumbDrawable="@drawable/icon_thumb" />
+
+    <!--重新定义一个RelativeLayout 用来改造之前的进度条的逻辑-->
+    <RelativeLayout
+        android:id="@+id/rv_seek_black"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/size_28"
+        android:layout_below="@id/lv_volume_title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size_30">
+
+        <ImageView
+            android:layout_width="@dimen/size_200"
+            android:layout_height="@dimen/size_28"
+            android:background="@drawable/icon_seek_black" />
+        <!--定义当前的进度的图片的布局-->
+        <RelativeLayout
+            android:id="@+id/rv_seek_green"
+            android:layout_width="@dimen/size_30"
+            android:layout_height="@dimen/size_28"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_seek_green" />
+        <!--定义小滑块的图片-->
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="@dimen/size_18"
+            android:layout_height="@dimen/size_18"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_6"
+            android:background="@drawable/icon_normal_volume" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_12">
+
+        <ImageView
+            android:id="@+id/minus_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size_10"
+            android:src="@drawable/img_bright_minus_selector" />
+
+        <ImageView
+            android:id="@+id/plus_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_10"
+            android:src="@drawable/img_bright_plus_selector" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

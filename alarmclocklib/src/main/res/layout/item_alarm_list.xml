@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_10"
+    android:background="@drawable/selector_cardview_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_switch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <ToggleButton
+            android:id="@+id/alarm_enable_view"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:button="@drawable/toggle_btn_alarm_on_off_trans"
+            android:checked="false"
+            android:focusable="false"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/tv_alarm_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="16:11"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_26" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_alarm_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_switch"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_5"
+        android:text="@string/str_alarm_tip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_26" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_below="@+id/tv_alarm_tip"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@+id/line"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/str_week_tip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_26" />
+
+        <TextView
+            android:id="@+id/tv_week1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/tv_week"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_week_mon"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:id="@+id/tv_week2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/tv_week1"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_week_tues"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:id="@+id/tv_week3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/tv_week2"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_week_wed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:id="@+id/tv_week4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/tv_week3"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_week_thur"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:id="@+id/tv_week5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/tv_week4"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_week_fri"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:id="@+id/tv_week6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/tv_week5"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_week_sat"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:id="@+id/tv_week7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_toRightOf="@+id/tv_week6"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_week_sun"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_20" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+

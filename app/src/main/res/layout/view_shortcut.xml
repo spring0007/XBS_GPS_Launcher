@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sczn.wearlauncher.status.view.ShortCutIcon
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="130dp">
+    <com.sczn.wearlauncher.status.view.StatusIconWithText 
+        android:id="@+id/shortcut_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView 
+        android:id="@+id/shortcut_delete"
+        android:src="@drawable/status_icon_shortcut_delete"
+        android:paddingTop="5dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_gravity="end|top"
+        android:visibility="gone"/>
+</com.sczn.wearlauncher.status.view.ShortCutIcon>

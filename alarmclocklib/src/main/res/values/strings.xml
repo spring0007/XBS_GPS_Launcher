@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Alarm</string>
+    <string name="str_alarm_tip">Alarm</string>
+    <string name="str_add_alarm_tip">Add alarm</string>
+    <string name="str_no_alarm_tip">The alarm has not been set</string>
+    <string name="alarm_week_mon">1</string>
+    <string name="alarm_week_tues">2</string>
+    <string name="alarm_week_wed">3</string>
+    <string name="alarm_week_thur">4</string>
+    <string name="alarm_week_fri">5</string>
+    <string name="alarm_week_sat">6</string>
+    <string name="alarm_week_sun">7</string>
+    <string name="str_week_tip">Weekly:</string>
+    <string name="str_week_onetime">Once</string>
+    <string name="str_everyday">Everyday</string>
+    <string name="str_week1">Mon</string>
+    <string name="str_week2">Tues</string>
+    <string name="str_week3">Wed</string>
+    <string name="str_week4">Thurs</string>
+    <string name="str_week5">Fri</string>
+    <string name="str_week6">Sat</string>
+    <string name="str_week7">Sun</string>
+    <string name="str_no_week_tip">Select at least one cycle option</string>
+    <string name="do_not_setting_clock_tip">Repeat alarm clock.</string>
+</resources>

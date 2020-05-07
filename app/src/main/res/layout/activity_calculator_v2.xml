@@ -1,0 +1,250 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:ellipsize="none"
+        android:gravity="center_vertical|end"
+        android:maxLength="12"
+        android:paddingEnd="@dimen/size_14"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_32" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/display"
+        android:background="@color/calculator_text"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/size_1"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:id="@+id/clear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_clear"
+                    android:onClick="clear" />
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_delete"
+                    android:onClick="back" />
+
+                <TextView
+                    android:id="@+id/divide"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_divide"
+                    android:onClick="operationButtonClick" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/size_1"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_1"
+                    android:onClick="numberButtonClick"
+                    android:text="1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_2"
+                    android:onClick="numberButtonClick"
+                    android:text="2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_3"
+                    android:onClick="numberButtonClick"
+                    android:text="3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/size_1"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_4"
+                    android:onClick="numberButtonClick"
+                    android:text="4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_5"
+                    android:onClick="numberButtonClick"
+                    android:text="5" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_6"
+                    android:onClick="numberButtonClick"
+                    android:text="6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/size_1"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_7"
+                    android:onClick="numberButtonClick"
+                    android:text="7" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_8"
+                    android:onClick="numberButtonClick"
+                    android:text="8" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_9"
+                    android:onClick="numberButtonClick"
+                    android:text="9" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_decimal"
+                    android:onClick="numberButtonClick"
+                    android:text="." />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_1"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal_0"
+                    android:onClick="numberButtonClick"
+                    android:text="0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--右侧-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/multiply"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/size_1"
+                android:layout_weight="1"
+                android:background="@drawable/cal_multiply"
+                android:onClick="operationButtonClick"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/size_1"
+                android:layout_weight="1"
+                android:background="@drawable/cal_add"
+                android:onClick="operationButtonClick" />
+
+            <TextView
+                android:id="@+id/subtract"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/size_1"
+                android:layout_weight="1"
+                android:background="@drawable/cal_subtract"
+                android:onClick="operationButtonClick" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/cal_equal"
+                android:onClick="equalButtonClick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

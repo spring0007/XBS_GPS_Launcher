@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transport"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/card_weather_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10"
+            android:layout_marginEnd="@dimen/size_10"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/text_size_20" />
+
+        <TextView
+            android:id="@+id/card_weather_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_weather_city"
+            android:layout_marginStart="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginEnd="@dimen/size_10"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- 暂时没有天气,隐藏 -->
+    <TextView
+        android:id="@+id/card_weather_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/normal_text"
+        android:textSize="@dimen/text_size_50"
+        android:visibility="gone" />
+
+    <!-- 暂时没有天气,隐藏 -->
+    <LinearLayout
+        android:id="@+id/weather_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_weather_temp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/card_weather_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/weather_temp" />
+
+        <TextView
+            android:id="@+id/card_weather_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qrcode_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <ImageView 
+        android:id="@+id/qrcode_image"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/qrcode_text"
+        android:layout_height="match_parent"/>
+    
+<!--     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"/> -->
+    
+    <TextView 
+        android:id="@+id/qrcode_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+     
+      	android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:singleLine="true"
+        android:text="@string/tips_qrcode"/>
+
+</RelativeLayout>

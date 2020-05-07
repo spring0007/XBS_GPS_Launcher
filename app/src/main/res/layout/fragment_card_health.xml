@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/health_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	  
+    <ImageView 
+        android:id="@+id/heart_rate_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/heart_1"/>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/health_bg"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/health_heart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    
+    <LinearLayout 
+        android:id="@+id/heart_rate_num_part"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heart_rate_current"
+            android:textColor="#666666"/>
+        
+        <TextView
+        	android:id="@+id/heart_rate_text"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="@color/normal_text"
+        	android:textSize="66sp"
+        	android:layout_marginTop="-15dp"/>
+    </LinearLayout>
+   
+    <TextView
+        android:id="@+id/begin_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/normal_text"
+        android:layout_alignParentBottom="true"
+   
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:text="@string/click_test"
+        android:textSize="20sp"
+        android:background="@drawable/heartrate_test_bg"
+        />
+        
+</RelativeLayout>

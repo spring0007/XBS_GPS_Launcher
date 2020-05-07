@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/size_6">
+
+        <com.sczn.wearlauncher.contact.view.CircleImageView
+            android:id="@+id/image_head"
+            android:layout_width="@dimen/size_60"
+            android:layout_height="@dimen/size_60"
+            android:src="@drawable/contact_default" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/view"
+        android:text="xxx"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_20" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_below="@+id/view"
+        android:background="@color/black" />
+
+    <View
+        android:id="@+id/view_news_msg"
+        android:layout_width="@dimen/size_10"
+        android:layout_height="@dimen/size_10"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/size_4"
+        android:layout_marginEnd="@dimen/size_4"
+        android:background="@drawable/chat_news_msg_bg"
+        android:visibility="gone" />
+
+</RelativeLayout>

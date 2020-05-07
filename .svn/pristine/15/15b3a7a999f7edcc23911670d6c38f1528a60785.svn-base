@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <TextView 
+        style="@style/userinfo_title"
+        android:text="@string/userinfo_weight"
+        android:drawableLeft="@drawable/userinfo_title_weight"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/userinfo_test_drawable_padding"/>
+    
+    <ListView 
+        android:id="@+id/userinfo_edit_list"
+        android:scrollbars="@null"
+        android:listSelector="@android:color/transparent"
+        android:divider="@color/userinfo_text_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

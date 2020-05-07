@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">沃特小博士2</string>
+    <string name="logo">WearOS</string>
+
+    <string name="bad_network">当期网络不佳.</string>
+
+    <string name="done">完成</string>
+    <string name="Unkown">未知</string>
+    <string name="Empty">列表为空</string>
+    <string name="delete">删除</string>
+
+    <string name="equal"> = </string>
+    <string name="ml"> 毫升</string>
+
+    <string name="power_connect">开始充电</string>
+    <string name="power_disconnect">停止充电</string>
+
+    <string name="db_unusual">数据库操作异常</string>
+    <string name="db_opration_success">数据库操作成功</string>
+
+    <!-- error -->
+    <string name="error_title">应用异常</string>
+    <string name="apk_restart">重启</string>
+
+    <!-- menu -->
+    <string name="menu_more">更多</string>
+    <string name="skin_change">换肤</string>
+    <string name="bg_change">换背景</string>
+    <string name="bg_change_success">修改成功.</string>
+
+
+    <string name="title_notification">通知</string>
+    <string name="notification_clear">清除</string>
+    <string name="notification_none">没有通知</string>
+    <string name="notification_closed">关闭</string>
+
+    <!-- exit dialog -->
+    <string name="exit_dialog_title">提示</string>
+    <string name="exit_dialog_msg">请确认是否关机?</string>
+    <string name="exit_dialog_ok">确认</string>
+    <string name="exit_dialog_cancel">取消</string>
+
+    <!-- lantin style -->
+    <string name="lantin_middle">lantinMiddle</string>
+    <string name="lantin_small">lantinSmall</string>
+    <!-- app folder name -->
+    <string name="health_text">健康</string>
+    <string name="clock_text">时钟</string>
+    <string name="video_text">音频中心</string>
+    <string name="tools_text">工具</string>
+    <string name="control_text">远程控制</string>
+    <string name="watch_manage_text">手表管理</string>
+    <string name="multimedia_center_text">多媒体中心</string>
+    <string name="correspond_text">通信</string>
+    <string name="remind_text">健康</string>
+    <string name="style_text">样式</string>
+    <string name="assist_android">安卓助手</string>
+    <string name="assist_ios">苹果助手</string>
+    <string name="qr_code">二维码</string>
+    <string name="call">通话</string>
+    <string name="contact">电话本</string>
+    <string name="chat">微聊</string>
+
+    <!-- app card name -->
+    <string name="card_compass">指南针</string>
+
+    <string name="card_uvray">紫外线</string>
+    <string name="card_uvray_title_text">紫外线</string>
+    <string name="card_uvray_index_text_low">低</string>
+    <string name="card_uvray_index_text_normal">中</string>
+    <string name="card_uvray_index_text_high">高</string>
+    <string name="card_uvray_index_text_very_heigh">超高</string>
+    <string name="card_uvray_index_text_strong">强</string>
+    <string name="card_sleep">睡眠</string>
+
+    <string name="card_sport">运动</string>
+    <string name="card_steps">计步</string>
+
+    <string name="card_health">健康</string>
+    <string name="card_heart_rate">心率</string>
+    <string name="card_temperature">气温</string>
+    <string name="card_weather">天气</string>
+    <string name="card_altitude">海拔</string>
+
+    <!-- app status icon -->
+    <string name="status_qrcode">二维码</string>
+    <string name="status_setting">设置</string>
+    <string name="status_battery">%1$s%</string>
+    <string name="status_sim">信号</string>
+    <string name="status_bt">蓝牙</string>
+    <string name="status_wifi">无线网络</string>
+    <string name="status_mode">情景模式</string>
+    <string name="status_sos">急救</string>
+    <string name="status_volume">声音</string>
+    <string name="status_brightness">亮度</string>
+    <string name="status_recent">最近使用</string>
+    <string name="status_raisescreen">抬手亮屏</string>
+    <string name="status_shutdown">关机</string>
+
+    <string name="date_year">年</string>
+    <string name="date_mon">月</string>
+    <string name="date_day">日</string>
+
+    <string name="weekday_mon">星期一</string>
+    <string name="weekday_tue">星期二</string>
+    <string name="weekday_wed">星期三</string>
+    <string name="weekday_thu">星期四</string>
+    <string name="weekday_fri">星期五</string>
+    <string name="weekday_sat">星期六</string>
+    <string name="weekday_sun">星期日</string>
+
+    <string name="status_battery_charging">充电中</string>
+    <string name="status_battery_full">充满</string>
+    <string name="status_qrcode_empty">请确认蓝牙正常工作!</string>
+    <string name="status_qrcode_preparing">二维码生成中...</string>
+    <string name="status_qrcode_error">Q二维码生成失败!</string>
+
+    <string name="brightness_title">亮度</string>
+    <string name="brightness_auto">自动</string>
+    <string name="volume_title">音量</string>
+    <string name="volume_mulrimedia">多媒体和其它</string>
+    <string name="volume_ring">通话和通知</string>
+    <string name="volume_alarm">闹钟</string>
+    <string name="sim_unvaluable">SIM卡不可用!</string>
+
+    <string name="mode_silent">静音</string>
+    <string name="mode_vibrate">震动</string>
+    <string name="mode_normal">响铃</string>
+    <string name="mode_curr">切换至 %1$s 模式</string>
+
+    <string name="shortcut_no">未添加</string>
+    <string name="shortcut_loading">加载中</string>
+    <string name="shortcut_setting_toast">设置不能删除</string>
+
+    <!-- sports -->
+    <string name="sport_history">运动历史</string>
+    <string name="sport_setting">运动设置</string>
+    <string name="sport_marathon_half">半马</string>
+    <string name="sport_marathon_full">全马</string>
+    <string name="sport_walking">健走</string>
+    <string name="sport_mountain">登山</string>
+    <string name="sport_cross_country">越野跑</string>
+    <string name="sport_run_outdoor">户外跑</string>
+    <string name="sport_run_indoor">室内跑</string>
+
+    <!-- cards -->
+    <string name="health_title_text">3秒后开始自动测量</string>
+    <string name="sport_step_unit">步</string>
+    <string name="sport_cal_unit">大卡</string>
+    <string name="sport_km_unit">千米</string>
+    <string name="sleep_hours_unit">小时</string>
+    <string name="deep_sleep_hours_unit">小时(深睡)</string>
+    <string name="light_sleep_hours_unit">小时(浅睡)</string>
+    <string name="sleep_state_good">优</string>
+    <string name="sleep_state_bad">差</string>
+    <string name="sleep_state_normal">良</string>
+    <string name="sleep_state_null">无</string>
+    <string name="compass_calibration">转动手腕进行校准</string>
+    <string name="compass_calibration_success">校准成功</string>
+
+    <!-- bt -->
+    <string name="bt_style_choose_android">安卓</string>
+    <string name="bt_style_choose_ios">苹果</string>
+    <string name="bt_connecet_android">连接安卓手机</string>
+    <string name="bt_connecet_ios">连接苹果手机</string>
+    <string name="bt_connecet_ios_adv">开启</string>
+    <string name="bt_connecet_qrcode_enlarge">点击显示二维码</string>
+    <string name="bt_connecet_android_guide"><Data><![CDATA[ 
+        		请打开与手表对应的手机应用《<font color="#f27c1c"><b>Fitcare</b></font>》。 <br/> 使用应用中
+        		“ <font color="#f27c1c"><b>更多</b></font> ” 下
+        		“<font color="#f27c1c"><b>连接手表</b></font>” 里的
+        		“<font color="#f27c1c"><b>扫一扫</b></font>” 功能扫描下面二维码
+        ]]></Data></string>
+    <string name="bt_connecet_ios_guide"><Data><![CDATA[ 
+        		请打开与手表对应的手机应用《乐活》，然后点击下方的
+        		“ <font color="#f27c1c"><b>开始配对</b></font> ”按钮。 <br/> 使用应用中
+        		“ <font color="#f27c1c"><b>更多</b></font> ” 下
+        		“<font color="#f27c1c"><b>连接手表</b></font>” 里的
+        		“<font color="#f27c1c"><b>搜索</b></font>” 功能搜索名称为
+        		“%1$s”的设备，点击该设备项完成配对。
+        ]]></Data></string>
+
+    <!-- sos -->
+    <string name="sos_no_number">请先设置号码</string>
+    <string name="sos_number_set_success">成功设置sos号码</string>
+
+    <!-- cards -->
+    <string name="heart_rate_begin">三秒后自动测量</string>
+    <string name="heart_rate_error">心率测量有误，确保手表紧贴手臂</string>
+    <string name="heart_rate_is_testing">测量中</string>
+    <string name="heart_rate_current">当前心率</string>
+    <string name="click_test">点击测量</string>
+    <string name="test_again">再测一次</string>
+    <!-- card activity -->
+    <string name="app_uv_name">紫外线</string>
+    <string name="app_alt_name">海拔</string>
+    <string name="app_air_pressure_name">气压</string>
+    <string name="app_compass_name">指南针</string>
+    <string name="app_step_count_name">今日步数</string>
+
+    <string name="current_uv_index_text">当前紫外线强度等级</string>
+    <string name="recent_uv_text">最近24h紫外线强度变化</string>
+
+    <string name="current_air_pressure_index_text">当前气压</string>
+    <string name="recent_air_pressure_text">最近24h小时气压变化</string>
+
+    <string name="current_alt_index_text">当前海拔</string>
+    <string name="recent_alt_text">最近24h海拔变化</string>
+
+    <string name="compass_location_text">点击开启GPS获取经纬度</string>
+    <string name="compass_locating">正在获取GPS定位</string>
+    <string name="compass_gps_good_text">GPS良好,定位中</string>
+    <string name="compass_gps_bad_text">GPS信号状态差</string>
+    <string name="compass_current_location_text">当前经纬度</string>
+
+    <string name="today_steps">今日步数</string>
+
+    <string name="sleep_none">无</string>
+    <string name="sleep_deep">深睡</string>
+    <string name="sleep_light">浅睡</string>
+    <string name="sleep_all">总时长</string>
+
+    <string name="heartrate_record">心率记录</string>
+    <string name="heartrate_unit">bmp</string>
+    <string name="heartrate_history">上次心率变化曲线</string>
+    <string name="heartrate_none">请测量足够长的时间</string>
+
+    <!-- healthAlarm -->
+    <string name="healthalarm">该起身活动活动了，记得经常喝水！</string>
+    <string name="healthalarm_drink">喝水提醒</string>
+    <string name="healthalarm_sit">久坐提醒</string>
+    <string name="healthalarm_next_time">下次提醒时间 \n(今天)</string>
+    <string name="drink_much">一杯</string>
+    <string name="drink_little">一口</string>
+    <string name="healthalarm_list">闹钟列表</string>
+    <string name="healthalarm_setting">设置</string>
+    <string name="drink_count">已喝: %1$s 毫升</string>
+    <string name="drink_target">目标: %1$s 毫升</string>
+
+    <string name="alarm_count_limit">The Max Count Limited</string>
+    <string name="pick_weekday_noone">仅一次</string>
+    <string name="pick_weekday_mo">一</string>
+    <string name="pick_weekday_tu">二</string>
+    <string name="pick_weekday_we">三</string>
+    <string name="pick_weekday_th">四</string>
+    <string name="pick_weekday_fr">五</string>
+    <string name="pick_weekday_sa">六</string>
+    <string name="pick_weekday_su">日</string>
+    <string name="alarm_repeat">重复</string>
+    <string name="alarm_sava_success">闹钟保存成功</string>
+    <string name="alarm_sava_failed">闹钟保存失败</string>
+    <string name="alarm_none">无</string>
+    <string name="alarm_add">添加</string>
+    <string name="alarm_at">健康提醒设置于 %1$s时 %2$s分 %3$s秒后</string>
+    <string name="alarm_ok">知道了</string>
+    <string name="alarm_goto_drink">去喝水</string>
+    <string name="drink_setting_reset">重置</string>
+    <string name="drink_setting_sava">保存</string>
+    <string name="drink_setting_sava_failued">保存失败</string>
+    <string name="drink_setting_clear">清空</string>
+    <string name="drink_target_value">目标</string>
+    <string name="drink_already_value">已喝</string>
+
+    <!-- geographic -->
+    <string name="geographic_atmosphere"> %1$s 帕</string>
+    <string name="geographic_altitude"> %1$s 米</string>
+    <string name="weather_get_success">刷新天气成功</string>
+    <string name="pressure_bad_signal">获取失败</string>
+
+    <string name="weather_sunny">晴</string>
+    <string name="weather_rain">雨</string>
+    <string name="weather_cloudy">多云</string>
+    <string name="weather_windy">风</string>
+    <string name="weather_snow">雪</string>
+
+    <!-- step -->
+    <string name="step_dis"> %1$s\n千米</string>
+    <string name="step_cal"> %1$s\n千卡</string>
+
+    <!-- user info -->
+    <string name="userinfo_title">个人资料</string>
+    <string name="userinfo_name">昵称</string>
+    <string name="userinfo_sex">性别</string>
+    <string name="userinfo_height">身高</string>
+    <string name="userinfo_weight">体重</string>
+    <string name="userinfo_targett">运动目标</string>
+    <string name="userinfo_target_step">目标步数</string>
+    <string name="userinfo_target_step_illegal">不合理的数值</string>
+
+    <string name="userinfo_name_unsettting">未设置</string>
+    <string name="userinfo_sex_man">男</string>
+    <string name="userinfo_sex_woman">女</string>
+
+    <string name="userinfo_data_changed">信息已修改</string>
+    <string name="tips_qrcode">扫描二维码绑定手表</string>
+    <string name="bind_title">绑定信息</string>
+    <string name="bind_sure">确认</string>
+    <string name="bind_cancel">取消</string>
+    <string name="bind_content">想要绑定您的设备，是否同意？</string>
+    <string name="un_bind_content">想要解绑您的设备，是否同意？</string>
+
+    <!--setting-->
+    <string name="setting">设置</string>
+    <string name="setting_wlan">WLAN</string>
+    <string name="setting_dial_type">表盘风格</string>
+    <string name="setting_clock_style_text">表盘更换</string>
+    <string name="setting_clock_style_1">模拟表盘</string>
+    <string name="setting_clock_style_2">数字表盘</string>
+    <string name="setting_theme_style">主题更换</string>
+    <string name="setting_bind">绑定向导</string>
+    <string name="setting_volume">音量调整</string>
+    <string name="setting_brightness">亮度调整</string>
+    <string name="setting_profile">情景模式</string>
+    <string name="setting_about">关于本机</string>
+    <string name="setting_fota">无线升级</string>
+    <string name="setting_volte">VOLTE</string>
+    <string name="setting_shutdown">关机</string>
+    <string name="setting_other">其他设置</string>
+
+    <string name="setting_profile_silent">静音</string>
+    <string name="setting_profile_vibrate">振动</string>
+    <string name="setting_profile_ring">响铃</string>
+    <string name="setting_profile_ring_vibrate">响铃加振动</string>
+
+    <string name="setting_about_company">制造商：%s</string>
+    <string name="setting_about_version_name">版本号：%s</string>
+    <string name="setting_about_version_date">版本日期：%s</string>
+    <string name="setting_about_internal_storage">可用内存：%s</string>
+    <string name="setting_about_imei">IMEI：%s</string>
+    <string name="setting_about_system_name">操作系统：安卓</string>
+
+    <string name="horizontal_layout">横向布局</string>
+    <string name="gird_layout">网格布局</string>
+
+    <!--已经连接的字符串的配置-->
+    <string name="wifi_state_connected">已经连接</string>
+    <string name="wifi_state_connecting">正在连接</string>
+    <string name="wifi_state_unconnect">未连接</string>
+    <string name="wifi_state_disconnect">连接有问题</string>
+
+    <string name="setting_wlan_password_input">请输入密码</string>
+    <string name="setting_wlan_no_result">没有扫描结果</string>
+    <string name="setting_wlan_no_enable">WIFI未启用</string>
+    <string name="setting_wlan_connect_begin">开始连接WIFI</string>
+
+    <string name="long_audio_error_text">抱歉，出错了</string>
+
+    <string name="already_upgrade">已是最新的版本.</string>
+
+    <string name="phone_no_phone">没有联系人</string>
+    <string name="launcher_main_sim_not_ok">请插入SIM卡</string>
+
+    <string name="setting_shutdown_not_allow">不允许关机!</string>
+    <string name="setting_shutdown_ask">关机</string>
+    <string name="setting_shutdown_now">正在关机，请稍后</string>
+
+    <string name="guide_tips_msg">扫描绑定</string>
+    <string name="download_tips">扫描下载app</string>
+    <string name="guide_next_page">如已安装请去下一页</string>
+
+    <string name="guide_tip_title_1">用手机扫描安装app</string>
+    <string name="guide_tip_title_2">扫描绑定</string>
+    <string name="guide_tip_2">扫描二维码，下载手机App</string>
+    <string name="guide_tip_3">下\n一\n步</string>
+    <string name="guide_tip_4">扫描二维码:%s</string>
+    <string name="guide_tip_5">完\n成</string>
+    <string name="guide_tip_6">重试</string>
+    <string name="guide_tip_7">绑定码为空</string>
+    <string name="guide_tip_8">手表绑定码</string>
+
+    <!--交朋友-->
+    <string name="shake_friend">交朋友</string>
+    <string name="please_register">请先注册</string>
+    <string name="already_add_group">已添加到您的讨论组.</string>
+    <string name="voice">声音</string>
+    <string name="shake">振动</string>
+    <string name="search_friends_tip">摇一摇开始寻找小伙伴吧.</string>
+    <string name="search_friends">正在寻找小伙伴...</string>
+    <string name="not_search_friends">没有结交到志趣相同小伙伴.</string>
+    <string name="search_friends_fail">失败啦~插上SIM卡试试吧.</string>
+
+    <string name="load_chat_group_fail">飞到外星啦,请再试试吧.</string>
+    <string name="send_msg_error">消息发送失败,请再试一次.</string>
+
+    <!-- 微聊 -->
+    <string name="syncing">正在同步中</string>
+    <string name="group">群聊名</string>
+    <string name="expression">表情</string>
+    <string name="not_recorded">已经到头啦.</string>
+    <string name="no_friends">没有任何好友.</string>
+
+    <!-- 课程表 -->
+    <string name="schedule">免打扰时间段</string>
+    <string name="no_schedule">未设置时间</string>
+    <string name="in_class">上课中~</string>
+    <string name="now_is">现在是:</string>
+    <string name="next_class">下节课为:</string>
+
+    <!--  -->
+    <string name="calculator">计算器</string>
+
+    <string name="tips">提示</string>
+    <string name="cancel">关闭</string>
+    <string name="sure">确定</string>
+    <string name="set_up_new_remind">设置新的提醒</string>
+    <string name="unknown">未知错误</string>
+
+    <!--视频通话-->
+    <string name="video">视频通话</string>
+
+    <!---->
+    <string name="find">寻找手表</string>
+
+    <string-array name="input_type_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="input_type_letter">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>e</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>i</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>m</item>
+        <item>n</item>
+        <item>o</item>
+        <item>p</item>
+        <item>q</item>
+        <item>r</item>
+        <item>s</item>
+        <item>t</item>
+        <item>u</item>
+        <item>v</item>
+        <item>w</item>
+        <item>x</item>
+        <item>y</item>
+        <item>z</item>
+    </string-array>
+
+    <!--http://blog.csdn.net/z1074971432/article/details/12753539-->
+    <string-array name="input_type_symbol">
+        <item> </item>
+        <item>~</item>
+        <item>`</item>
+        <item>!</item>
+        <item>\u0040</item>
+        <item>#</item>
+        <item>$</item>
+        <item>%</item>
+        <item>^</item>
+        <item>&#038;</item>
+        <item>*</item>
+        <item>(</item>
+        <item>)</item>
+        <item>-</item>
+        <item>_</item>
+        <item>=</item>
+        <item>+</item>
+        <item>[</item>
+        <item>{</item>
+        <item>]</item>
+        <item>}</item>
+        <item>;</item>
+        <item>:</item>
+        <item>\'</item>
+        <item>\"</item>
+        <item>\\</item>
+        <item>|</item>
+        <item>,</item>
+        <item>&#060;</item>
+        <item>.</item>
+        <item>></item>
+        <item>/</item>
+        <item>\?</item>
+    </string-array>
+</resources>

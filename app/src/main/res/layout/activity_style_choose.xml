@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wearlauncher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <com.sczn.wearlauncher.menu.view.MenuBgView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        wearlauncher:forWhich="menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transport"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/title_style"
+            android:text="@string/style_text" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.sczn.wearlauncher.menu.view.StyleChooseViewPager
+                android:id="@+id/style_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <com.sczn.wearlauncher.base.view.ViewPagerIndicator
+                android:id="@+id/style_choose_style_indicator"
+                android:layout_width="@dimen/indicator_dot_all_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="-7dp"
+                android:minHeight="@dimen/title_height" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            style="@style/bottom_text_style"
+            android:orientation="horizontal">
+
+            <com.sczn.wearlauncher.base.view.ScrollerTextView
+                android:id="@+id/style_choose_skin_text"
+                style="@style/bottom_text_start_style"
+                android:text="@string/skin_change" />
+
+            <View style="@style/bottom_center_diliver" />
+
+            <com.sczn.wearlauncher.base.view.ScrollerTextView
+                android:id="@+id/style_choose_bg"
+                style="@style/bottom_text_end_style"
+                android:text="@string/bg_change" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

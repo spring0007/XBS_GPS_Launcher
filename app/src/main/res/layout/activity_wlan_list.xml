@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/no_data_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/setting_wlan_no_result"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_22" />
+
+
+    <com.sczn.wearlauncher.base.view.MyRecyclerView
+        android:id="@+id/rv_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listDivider="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Steplib</string>
+    <string name="step_by_step">Step</string>
+    <string name="step">Step</string>
+</resources>

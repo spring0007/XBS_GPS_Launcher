@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wearlauncher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"> 
+    
+    <com.sczn.wearlauncher.menu.view.MenuBgView 
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        wearlauncher:forWhich="menu"/>
+    
+    <LinearLayout
+	    android:paddingTop="20dp"
+	    android:paddingBottom="20dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center"
+	    android:background="@color/transport"
+	    android:orientation="vertical">
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+	        
+	        <include android:id="@id/shortcut_first"
+	            layout="@layout/view_shortcut"/>
+	        
+	        <include android:id="@id/shortcut_second"
+	            layout="@layout/view_shortcut"/>
+	    </LinearLayout>  
+	        
+	    <View 
+	        android:layout_width="1dp"
+	        android:layout_height="1dp"/>
+	        
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+		    
+	        <include android:id="@id/shortcut_third"
+	            layout="@layout/view_shortcut"/>
+	        
+	        <include android:id="@id/shortcut_forth"
+	            layout="@layout/view_shortcut"/>
+	            
+	    </LinearLayout> 
+	
+	</LinearLayout> 
+    
+</FrameLayout>
